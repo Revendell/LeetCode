@@ -8,3 +8,4 @@
 - [5、最大回文子串](https://blog.csdn.net/Revendell/article/details/103300317)<br>
 - [6、Z字形变换](https://blog.csdn.net/Revendell/article/details/103316424)<br>
 - [7、整数反转](https://blog.csdn.net/Revendell/article/details/103316543)<br>
+- [8、字符串转换整数 (atoi)](https://blog.csdn.net/Revendell/article/details/103335773)<br>
