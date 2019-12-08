@@ -17,3 +17,7 @@
 - [14、最长公共前缀](https://blog.csdn.net/Revendell/article/details/103408606)<br>
 - [15、三数之和](https://blog.csdn.net/Revendell/article/details/103424913)<br>
 - [16、最接近的三数之和](https://blog.csdn.net/Revendell/article/details/103428117)<br>
+- [17、电话号码的字母组合](https://blog.csdn.net/Revendell/article/details/103450593)<br>
+- [18、四数之和](https://blog.csdn.net/Revendell/article/details/103438442)<br>
+- [19、删除链表的倒数第N个节点](https://blog.csdn.net/Revendell/article/details/103444927)<br>
+- [20、有效的括号](https://blog.csdn.net/Revendell/article/details/103446886)<br>
