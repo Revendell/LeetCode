@@ -23,3 +23,4 @@
 - [20、有效的括号](https://blog.csdn.net/Revendell/article/details/103446886)<br>
 - [21、合并两个有序链表](https://blog.csdn.net/Revendell/article/details/103460468)<br>
 - [22、括号生成](https://blog.csdn.net/Revendell/article/details/103468918)<br>
+- [23、合并K个排序链表](https://blog.csdn.net/Revendell/article/details/103482864)<br>
