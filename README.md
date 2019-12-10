@@ -22,3 +22,4 @@
 - [19、删除链表的倒数第N个节点](https://blog.csdn.net/Revendell/article/details/103444927)<br>
 - [20、有效的括号](https://blog.csdn.net/Revendell/article/details/103446886)<br>
 - [21、合并两个有序链表](https://blog.csdn.net/Revendell/article/details/103460468)<br>
+- [22、括号生成](https://blog.csdn.net/Revendell/article/details/103468918)<br>
