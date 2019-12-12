@@ -24,3 +24,4 @@
 - [21、合并两个有序链表](https://blog.csdn.net/Revendell/article/details/103460468)<br>
 - [22、括号生成](https://blog.csdn.net/Revendell/article/details/103468918)<br>
 - [23、合并K个排序链表](https://blog.csdn.net/Revendell/article/details/103482864)<br>
+- [24、两两交换链表中的节点](https://blog.csdn.net/Revendell/article/details/103500685)<br>
