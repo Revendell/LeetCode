@@ -27,3 +27,4 @@
 - [24、两两交换链表中的节点](https://blog.csdn.net/Revendell/article/details/103500685)<br>
 - [25、K个一组翻转链表](https://blog.csdn.net/Revendell/article/details/103509921)<br>
 - [26、删除排序数组中的重复项](https://blog.csdn.net/Revendell/article/details/103527479)<br>
+- [27、移除元素](https://blog.csdn.net/Revendell/article/details/103537223)<br>
