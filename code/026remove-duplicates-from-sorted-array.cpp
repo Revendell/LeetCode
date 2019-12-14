@@ -34,18 +34,17 @@ public:
 		while (i < nums.size() - 1)
 		{
 			//遇到重复项用erase函数删除重复项
-			while (i < nums.size() - 1 && nums[i] == nums[i + 1])
-			{
+			if (nums[i] == nums[i + 1])
 				nums.erase(nums.begin() + i);
-			}
-			i++;
+			else
+			    i++;
 		}
 		return nums.size();
 	}
 };
 int main()
 {
-	Solution1 solute;
+	Solution2 solute;
 	vector<int> nums = { 1,1,2,2,3 };
 	int len = solute.removeDuplicates(nums);
 	for (int i = 0; i < len; i++)
