@@ -29,3 +29,4 @@
 - [26、删除排序数组中的重复项](https://blog.csdn.net/Revendell/article/details/103527479)<br>
 - [27、移除元素](https://blog.csdn.net/Revendell/article/details/103537223)<br>
 - [28、实现strStr()](https://blog.csdn.net/Revendell/article/details/103563947)<br>
+- [29、两数相除](https://blog.csdn.net/Revendell/article/details/103579888)<br>
