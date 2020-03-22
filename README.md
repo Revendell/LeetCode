@@ -33,4 +33,5 @@
 - [30、串联所有单词的子串](https://blog.csdn.net/Revendell/article/details/104981146)<br>
 - [31、下一个排列](https://blog.csdn.net/Revendell/article/details/105001888)<br>
 - [32、最长有效括号](https://blog.csdn.net/Revendell/article/details/105011706)<br>
+- [33、搜索旋转排序数组](https://blog.csdn.net/Revendell/article/details/105028452)<br>
 - [35、搜索插入位置](https://blog.csdn.net/Revendell/article/details/103958788)<br>
