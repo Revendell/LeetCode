@@ -34,4 +34,5 @@
 - [31、下一个排列](https://blog.csdn.net/Revendell/article/details/105001888)<br>
 - [32、最长有效括号](https://blog.csdn.net/Revendell/article/details/105011706)<br>
 - [33、搜索旋转排序数组](https://blog.csdn.net/Revendell/article/details/105028452)<br>
+- [34、在排序数组中查找元素的第一个和最后一个位置](https://blog.csdn.net/Revendell/article/details/105049053)<br>
 - [35、搜索插入位置](https://blog.csdn.net/Revendell/article/details/103958788)<br>
