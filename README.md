@@ -37,3 +37,4 @@
 - [34、在排序数组中查找元素的第一个和最后一个位置](https://blog.csdn.net/Revendell/article/details/105049053)<br>
 - [35、搜索插入位置](https://blog.csdn.net/Revendell/article/details/103958788)<br>
 - [36、有效的数独](https://blog.csdn.net/Revendell/article/details/105074042)<br>
+- [37、解数独](https://blog.csdn.net/Revendell/article/details/105102064)<br>
