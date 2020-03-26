@@ -39,3 +39,4 @@
 - [36、有效的数独](https://blog.csdn.net/Revendell/article/details/105074042)<br>
 - [37、解数独](https://blog.csdn.net/Revendell/article/details/105102064)<br>
 - [38、外观数列](https://blog.csdn.net/Revendell/article/details/105118505)<br>
+- [39、组合总和](https://blog.csdn.net/Revendell/article/details/105125318)<br>
