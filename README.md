@@ -42,3 +42,4 @@
 - [39、组合总和](https://blog.csdn.net/Revendell/article/details/105125318)<br>
 - [40、组合总和II](https://blog.csdn.net/Revendell/article/details/105153930)<br>
 - [41、缺失的第一个正数](https://blog.csdn.net/Revendell/article/details/105165285)<br>
+- [42、接雨水](https://blog.csdn.net/Revendell/article/details/105172091)<br>
