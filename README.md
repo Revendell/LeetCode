@@ -47,3 +47,4 @@
 - [44、通配符匹配](https://blog.csdn.net/Revendell/article/details/105208661)<br>
 - [45、跳跃游戏II](https://blog.csdn.net/Revendell/article/details/105225173)<br>
 - [46、全排列](https://blog.csdn.net/Revendell/article/details/105250593)<br>
+- [47、全排列II](https://blog.csdn.net/Revendell/article/details/105270494)<br>
