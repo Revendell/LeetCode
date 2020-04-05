@@ -52,3 +52,4 @@
 - [49、字母异位词分组（HashMap）](https://blog.csdn.net/Revendell/article/details/105294252)<br>
 - [50、Pow(x, n)（快速幂算法）](https://blog.csdn.net/Revendell/article/details/105310822)<br>
 - [51、N皇后（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105328087)<br>
+- [52、N皇后 II（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105328399)<br>
