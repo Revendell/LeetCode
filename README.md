@@ -53,3 +53,5 @@
 - [50、Pow(x, n)（快速幂算法）](https://blog.csdn.net/Revendell/article/details/105310822)<br>
 - [51、N皇后（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105328087)<br>
 - [52、N皇后 II（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105328399)<br>
+- [53、最大子序和（贪心法）](https://blog.csdn.net/Revendell/article/details/105344484)<br>
+- [54、螺旋矩阵（从外向内模拟旋转过程）](https://blog.csdn.net/Revendell/article/details/105365407)<br>
