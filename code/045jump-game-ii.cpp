@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 class Solution {
 public:
@@ -91,8 +92,7 @@ public:
 		while (i < nums.size() - 1)
 		{
 			//计算当前前i个跳点最大可以跳到的点max_pos
-			if (nums[i] + i > max_pos)
-				max_pos = nums[i] + i;
+			max_pos = max(max_pos, nusm[i] + i);
 			//如果最大跳可以跳到终点，结束返回step+1
 			if (max_pos >= nums.size() - 1)
 				return step + 1;
