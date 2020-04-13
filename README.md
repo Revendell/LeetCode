@@ -65,3 +65,4 @@
 - [62、不同路径（动态规划法）](https://blog.csdn.net/Revendell/article/details/105456289)<br>
 - [63、不同路径 II（动态规划法）](https://blog.csdn.net/Revendell/article/details/105468865)<br>
 - [64、最小路径和（动态规划法）](https://blog.csdn.net/Revendell/article/details/105469475)<br>
+- [65、有效数字（面向测试用例编程）](https://blog.csdn.net/Revendell/article/details/105492114)<br>
