@@ -68,3 +68,4 @@
 - [65、有效数字（面向测试用例编程）](https://blog.csdn.net/Revendell/article/details/105492114)<br>
 - [66、加一（进位加一）](https://blog.csdn.net/Revendell/article/details/105492987)<br>
 - [67、二进制求和（逐位计算）](https://blog.csdn.net/Revendell/article/details/105510694)<br>
+- [68、文本左右对齐（贪心法，像公司的业务逻辑题）](https://blog.csdn.net/Revendell/article/details/105518472)<br>
