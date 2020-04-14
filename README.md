@@ -67,3 +67,4 @@
 - [64、最小路径和（动态规划法）](https://blog.csdn.net/Revendell/article/details/105469475)<br>
 - [65、有效数字（面向测试用例编程）](https://blog.csdn.net/Revendell/article/details/105492114)<br>
 - [66、加一（进位加一）](https://blog.csdn.net/Revendell/article/details/105492987)<br>
+- [67、二进制求和（逐位计算）](https://blog.csdn.net/Revendell/article/details/105510694)<br>
