@@ -69,3 +69,4 @@
 - [66、加一（进位加一）](https://blog.csdn.net/Revendell/article/details/105492987)<br>
 - [67、二进制求和（逐位计算）](https://blog.csdn.net/Revendell/article/details/105510694)<br>
 - [68、文本左右对齐（贪心法，像公司的业务逻辑题）](https://blog.csdn.net/Revendell/article/details/105518472)<br>
+- [69、x的平方根（牛顿迭代法）](https://blog.csdn.net/Revendell/article/details/105534248)<br>
