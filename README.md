@@ -72,3 +72,4 @@
 - [69、x的平方根（牛顿迭代法）](https://blog.csdn.net/Revendell/article/details/105534248)<br>
 - [70、爬楼梯（动态规划法）](https://blog.csdn.net/Revendell/article/details/105535099)<br>
 - [71、简化路径（栈、暴力模拟）](https://blog.csdn.net/Revendell/article/details/105561586)<br>
+- [72、编辑距离（动态规划法——困难）](https://blog.csdn.net/Revendell/article/details/105567519)<br>
