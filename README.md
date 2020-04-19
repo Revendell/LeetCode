@@ -76,3 +76,4 @@
 - [73、矩阵置零（额外空间常数级）](https://blog.csdn.net/Revendell/article/details/105581954)<br>
 - [74、搜索二维矩阵（二分查找）](https://blog.csdn.net/Revendell/article/details/105583657)<br>
 - [75、颜色分类（荷兰国旗问题，三指针）](https://blog.csdn.net/Revendell/article/details/105599137)<br>
+- [76、最小覆盖子串（HashMap+滑动窗口——困难）](https://blog.csdn.net/Revendell/article/details/105615240)<br>
