@@ -78,3 +78,4 @@
 - [75、颜色分类（荷兰国旗问题，三指针）](https://blog.csdn.net/Revendell/article/details/105599137)<br>
 - [76、最小覆盖子串（HashMap+滑动窗口——困难）](https://blog.csdn.net/Revendell/article/details/105615240)<br>
 - [77、组合（字典序 (二进制排序) 组合、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105617426)<br>
+- [78、子集（字典排序（二进制排序）子集、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105635812)<br>
