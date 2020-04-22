@@ -82,3 +82,4 @@
 - [79、单词搜索（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105638148)<br>
 - [80、删除排序数组中的重复项 II（双指针）](https://blog.csdn.net/Revendell/article/details/105657347)<br>
 - [81、搜索旋转排序数组 II（折半查找）](https://blog.csdn.net/Revendell/article/details/105659488)<br>
+- [82、删除排序链表中的重复元素 II（单链表操作）](https://blog.csdn.net/Revendell/article/details/105681697)<br>
