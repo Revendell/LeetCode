@@ -85,3 +85,4 @@
 - [82、删除排序链表中的重复元素 II（单链表操作）](https://blog.csdn.net/Revendell/article/details/105681697)<br>
 - [83、删除排序链表中的重复元素（单链表操作）](https://blog.csdn.net/Revendell/article/details/105682126)<br>
 - [84、柱状图中最大的矩形（单调栈、分治法、暴力法——困难）](https://blog.csdn.net/Revendell/article/details/105694583)<br>
+- [85、最大矩形（单调栈——困难）](https://blog.csdn.net/Revendell/article/details/105715235)<br>
