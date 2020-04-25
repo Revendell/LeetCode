@@ -87,3 +87,4 @@
 - [84、柱状图中最大的矩形（单调栈、分治法、暴力法——困难）](https://blog.csdn.net/Revendell/article/details/105694583)<br>
 - [85、最大矩形（单调栈——困难）](https://blog.csdn.net/Revendell/article/details/105715235)<br>
 - [86、分隔链表（双指针单链表操作）](https://blog.csdn.net/Revendell/article/details/105718574)<br>
+- [87、扰乱字符串（自顶向下递归法）](https://blog.csdn.net/Revendell/article/details/105750043)<br>
