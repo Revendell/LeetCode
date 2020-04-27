@@ -92,3 +92,4 @@
 - [89、格雷编码（Gn = Bn XOR Bn-1）](https://blog.csdn.net/Revendell/article/details/105770993)<br>
 - [90、子集 II（字典排序（二进制排序）子集、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105772265)<br>
 - [91、解码方法（动态规划法、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105791734)<br>
+- [92、反转链表 II（单链表操作）](https://blog.csdn.net/Revendell/article/details/105794409)<br>
