@@ -5,8 +5,6 @@ using namespace std;
 class Solution {
 public:
 	int numTrees(int n) {
-		if (n == 0)
-			return 1;
 		//基本思想：迭代法求解卡特兰数
 		//n个节点存在二叉排序树的个数是G(n)，令f(i)为以i为根的二叉搜索树的个数，则
 		//G(n)=f(1)+f(2)+f(3)+f(4)+...+f(n)
