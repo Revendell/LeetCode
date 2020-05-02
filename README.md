@@ -104,3 +104,4 @@
 - [101、对称二叉树（递归、迭代）](https://blog.csdn.net/Revendell/article/details/105889156)<br>
 - [102、二叉树的层序遍历（队列）](https://blog.csdn.net/Revendell/article/details/105889963)<br>
 - [103、二叉树的锯齿形层次遍历（队列）](https://blog.csdn.net/Revendell/article/details/105890045)<br>
+- [104、二叉树的最大深度（深搜、广搜）](https://blog.csdn.net/Revendell/article/details/105891055)<br>
