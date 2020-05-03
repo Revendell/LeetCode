@@ -106,3 +106,4 @@
 - [103、二叉树的锯齿形层次遍历（队列）](https://blog.csdn.net/Revendell/article/details/105890045)<br>
 - [104、二叉树的最大深度（深搜、广搜）](https://blog.csdn.net/Revendell/article/details/105891055)<br>
 - [105、从前序与中序遍历序列构造二叉树（递归）](https://blog.csdn.net/Revendell/article/details/105903350)<br>
+- [106、从中序与后序遍历序列构造二叉树（递归）](https://blog.csdn.net/Revendell/article/details/105903638)<br>
