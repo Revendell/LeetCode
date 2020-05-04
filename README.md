@@ -114,3 +114,4 @@
 - [111、二叉树的最小深度（递归）](https://blog.csdn.net/Revendell/article/details/105917672)<br>
 - [112、路径总和（递归）](https://blog.csdn.net/Revendell/article/details/105918794)<br>
 - [113、路径总和 II（递归回溯）](https://blog.csdn.net/Revendell/article/details/105919443)<br>
+- [114、二叉树展开为链表（类似单链表基本操作）](https://blog.csdn.net/Revendell/article/details/105921161)<br>
