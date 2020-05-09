@@ -125,3 +125,4 @@
 - [122、买卖股票的最佳时机 II](https://blog.csdn.net/Revendell/article/details/105970694)<br>
 - [123、买卖股票的最佳时机 III（动态规划法——困难）](https://blog.csdn.net/Revendell/article/details/105981081)<br>
 - [124、二叉树中的最大路径和（递归、迭代）](https://blog.csdn.net/Revendell/article/details/106010791)<br>
+- [125、验证回文串（递归、迭代）](https://blog.csdn.net/Revendell/article/details/106019695)<br>
