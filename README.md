@@ -138,3 +138,4 @@
 - [135、分发糖果（单调递减栈、递归）](https://blog.csdn.net/Revendell/article/details/106183226)<br>
 - [136、只出现一次的数字（位运算）](https://blog.csdn.net/Revendell/article/details/106192773)<br>
 - [137、只出现一次的数字 II（位运算——困难）](https://blog.csdn.net/Revendell/article/details/106195797)<br>
+- [138、复制带随机指针的链表（递归+HashMap）](https://blog.csdn.net/Revendell/article/details/106214547)<br>
