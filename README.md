@@ -142,3 +142,4 @@
 - [139、单词拆分（动态规划+set）](https://blog.csdn.net/Revendell/article/details/106218179)<br>
 - [140、单词拆分 II（动态规划+递归回溯）](https://blog.csdn.net/Revendell/article/details/106239336)<br>
 - [141、环形链表（哈希表、快慢双指针）](https://blog.csdn.net/Revendell/article/details/106240870)<br>
+- [142、环形链表 II（哈希表、快慢双指针）](https://blog.csdn.net/Revendell/article/details/106258034)<br>
