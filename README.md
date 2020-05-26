@@ -154,3 +154,4 @@
 - [151、翻转字符串里的单词（暴力、istringstream）](https://blog.csdn.net/Revendell/article/details/106337760)<br>
 - [152、乘积最大子数组（动态规划、贪心）](https://blog.csdn.net/Revendell/article/details/106359206)<br>
 - [153、寻找旋转排序数组中的最小值（折半查找）](https://blog.csdn.net/Revendell/article/details/106360213)<br>
+- [154、寻找旋转排序数组中的最小值 II（折半查找）](https://blog.csdn.net/Revendell/article/details/106360741)<br>
