@@ -152,3 +152,4 @@
 - [149、直线上最多的点数（HashMap+暴力）](https://blog.csdn.net/Revendell/article/details/106319643)<br>
 - [150、逆波兰表达式求值（栈）](https://blog.csdn.net/Revendell/article/details/106333213)<br>
 - [151、翻转字符串里的单词（暴力、istringstream）](https://blog.csdn.net/Revendell/article/details/106337760)<br>
+- [152、乘积最大子数组（动态规划、贪心）](https://blog.csdn.net/Revendell/article/details/106359206)<br>
