@@ -158,3 +158,4 @@
 - [155、最小栈（辅助栈、HashMap）](https://blog.csdn.net/Revendell/article/details/106380114)<br>
 - [160、相交链表（双指针法）](https://blog.csdn.net/Revendell/article/details/106386172)<br>
 - [162、寻找峰值（折半查找）](https://blog.csdn.net/Revendell/article/details/106403729)<br>
+- [164、最大间距（桶排序+鸽笼原理）](https://blog.csdn.net/Revendell/article/details/106410662)<br>
