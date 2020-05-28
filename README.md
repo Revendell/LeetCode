@@ -157,3 +157,4 @@
 - [154、寻找旋转排序数组中的最小值 II（折半查找）](https://blog.csdn.net/Revendell/article/details/106360741)<br>
 - [155、最小栈（辅助栈、HashMap）](https://blog.csdn.net/Revendell/article/details/106380114)<br>
 - [160、相交链表（双指针法）](https://blog.csdn.net/Revendell/article/details/106386172)<br>
+- [162、寻找峰值（折半查找）](https://blog.csdn.net/Revendell/article/details/106403729)<br>
