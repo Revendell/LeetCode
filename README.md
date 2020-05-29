@@ -159,3 +159,4 @@
 - [160、相交链表（双指针法）](https://blog.csdn.net/Revendell/article/details/106386172)<br>
 - [162、寻找峰值（折半查找）](https://blog.csdn.net/Revendell/article/details/106403729)<br>
 - [164、最大间距（桶排序+鸽笼原理）](https://blog.csdn.net/Revendell/article/details/106410662)<br>
+- [165、比较版本号（istrigstream、双指针、额外O(n)空间）](https://blog.csdn.net/Revendell/article/details/106429006)<br>
