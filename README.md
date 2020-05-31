@@ -164,3 +164,4 @@
 - [167、两数之和 II - 输入有序数组（双指针）](https://blog.csdn.net/Revendell/article/details/106442337)<br>
 - [168、Excel表列名称（数学）](https://blog.csdn.net/Revendell/article/details/106445011)<br>
 - [169、多数元素（摩尔投票法、哈希表）](https://blog.csdn.net/Revendell/article/details/106455098)<br>
+- [171、Excel表列序号（进制转换）](https://blog.csdn.net/Revendell/article/details/106455859)<br>
