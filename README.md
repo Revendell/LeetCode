@@ -165,3 +165,4 @@
 - [168、Excel表列名称（数学）](https://blog.csdn.net/Revendell/article/details/106445011)<br>
 - [169、多数元素（摩尔投票法、哈希表）](https://blog.csdn.net/Revendell/article/details/106455098)<br>
 - [171、Excel表列序号（进制转换）](https://blog.csdn.net/Revendell/article/details/106455859)<br>
+- [172、阶乘后的零（数学高效计算因子）](https://blog.csdn.net/Revendell/article/details/106458065)<br>
