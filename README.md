@@ -168,4 +168,4 @@
 - [172、阶乘后的零（数学高效计算因子）](https://blog.csdn.net/Revendell/article/details/106458065)<br>
 - [173、二叉搜索树迭代器（栈）](https://blog.csdn.net/Revendell/article/details/106470566)<br>
 - [174、地下城游戏（动态规划）——困难](https://blog.csdn.net/Revendell/article/details/106479630)<br>
-- [175、最大数（排序、暴力）](https://blog.csdn.net/Revendell/article/details/106497020)<br>
+- [179、最大数（排序、暴力）](https://blog.csdn.net/Revendell/article/details/106497020)<br>
