@@ -171,3 +171,4 @@
 - [179、最大数（排序、暴力）](https://blog.csdn.net/Revendell/article/details/106497020)<br>
 - [187、重复的DNA序列（窗口切片+HashSet、位运算）](https://blog.csdn.net/Revendell/article/details/106504174)<br>
 - [188、买卖股票的最佳时机 IV（贪心+动态规划——困难）](https://blog.csdn.net/Revendell/article/details/106523300)<br>
+- [189、旋转数组（环状替换、反转）](https://blog.csdn.net/Revendell/article/details/106526579)<br>
