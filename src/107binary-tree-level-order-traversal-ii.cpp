@@ -2,7 +2,7 @@
 #include<vector>
 #include<algorithm>
 #include<iterator>
-#include<list>
+#include<deque>
 using namespace std;
 struct TreeNode {
 	int val;
@@ -33,7 +33,7 @@ public:
 		vector<vector<int>> res;
 		if (root == NULL)
 			return res;
-		list<TreeNode*> queue;
+		deque<TreeNode*> queue;
 		TreeNode* cur;
 		vector<int> vec;
 		queue.push_back(root);
