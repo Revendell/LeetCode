@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<iterator>
 #include<stack>
-#include<list>
+#include<deque>
 using namespace std;
 struct TreeNode {
 	int val;
@@ -52,7 +52,7 @@ public:
 		//基本思想：迭代，广度优先搜索
 		if (root == NULL)
 			return 0;
-		list<TreeNode*> queue;
+		deque<TreeNode*> queue;
 		int depth = 0;
 		TreeNode* cur;
 		queue.push_back(root);
