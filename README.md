@@ -180,3 +180,4 @@
 - [201、数字范围按位与（位移、数学+位运算）](https://blog.csdn.net/Revendell/article/details/106601279)<br>
 - [202、快乐数（快慢指针、哈希表）](https://blog.csdn.net/Revendell/article/details/106602639)<br>
 - [203、移除链表元素（单链表基本操作）](https://blog.csdn.net/Revendell/article/details/106603328)<br>
+- [204、计数质数（数学、埃拉托斯特尼筛法）](https://blog.csdn.net/Revendell/article/details/106606037)<br>
