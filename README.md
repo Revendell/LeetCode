@@ -127,7 +127,7 @@
 - [124、二叉树中的最大路径和（递归、迭代）](https://blog.csdn.net/Revendell/article/details/106010791)<br>
 - [125、验证回文串（递归、迭代）](https://blog.csdn.net/Revendell/article/details/106019695)<br>
 - [126、单词接龙 II（DFS+BFS、BFS——困难）](https://blog.csdn.net/Revendell/article/details/106097232)<br>
-- [127、单词接龙（BFS、双向BFS）](https://blog.csdn.net/Revendell/article/details/106118201)<br>
+- [127、单词接龙（广度优先搜索、双向广度优先搜索）](https://blog.csdn.net/Revendell/article/details/106118201)<br>
 - [128、最长连续序列（HashMap）](https://blog.csdn.net/Revendell/article/details/106121810)<br>
 - [129、求根到叶子节点数字之和（递归）](https://blog.csdn.net/Revendell/article/details/106124443)<br>
 - [130、被围绕的区域（dfs）](https://blog.csdn.net/Revendell/article/details/106149963)<br>
