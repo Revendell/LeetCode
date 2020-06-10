@@ -18,18 +18,18 @@ public:
 		//若整个课程安排图是有向无环图，则所有节点一定都入队并出队过，最后numCourses=0，即完成拓扑排序。
 		//若课程安排图中存在环路，一定有节点的入度始终不为0，最后numCourses>0，即不能完成拓扑排序。
 		multimap<int, int> HashMap;
-		unordered_map<int, int> inDegree;
+		vector<int> inDegree;
 		deque<int> queue;
 		//计算所有节点的入度，并建立HashMap保存节点关系方便快速查找当前节点的后继节点
 		for (int i = 0; i < prerequisites.size(); i++)
 		{
-			++inDegree[prerequisites[i][1]];
+			inDegree[prerequisites[i][1]]++;
 			HashMap.insert({prerequisites[i][0],prerequisites[i][1]});
 		}
 		//将所有入度为0的节点入队列
 		for (int i = 0; i < numCourses; i++)
 		{
-			if (inDegree.find(i) == inDegree.end())
+			if (inDegree[i] == 0)
 				queue.push_front(i);
 		}
 		//cur为当前入度为0的节点，post为cur的后继节点
