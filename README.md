@@ -193,3 +193,4 @@
 - [214、最短回文串（KMP算法——困难）](https://blog.csdn.net/Revendell/article/details/106736511)<br>
 - [215、数组中的第K个最大元素（堆排序）](https://blog.csdn.net/Revendell/article/details/106766308)<br>
 - [216、组合总和 III（深度优先搜索递归回溯）](https://blog.csdn.net/Revendell/article/details/106768875)<br>
+- [217、存在重复元素（哈希表）](https://blog.csdn.net/Revendell/article/details/106785154)<br>
