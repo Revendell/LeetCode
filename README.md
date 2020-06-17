@@ -196,3 +196,4 @@
 - [217、存在重复元素（哈希表）](https://blog.csdn.net/Revendell/article/details/106785154)<br>
 - [218、天际线问题（扫描线算法：建立合适的数据结构哈希表——困难）](https://blog.csdn.net/Revendell/article/details/106789932)<br>
 - [219、存在重复元素 II（HashMap、哈希表+滑动窗口）](https://blog.csdn.net/Revendell/article/details/106805331)<br>
+- [220、存在重复元素 III（滑动窗口+哈希表）](https://blog.csdn.net/Revendell/article/details/106812190)<br>
