@@ -208,3 +208,4 @@
 - [229、求众数 II（摩尔投票法）](https://blog.csdn.net/Revendell/article/details/107040021)<br>
 - [230、二叉搜索树中第K小的元素](https://blog.csdn.net/Revendell/article/details/107040389)<br>
 - [231、2的幂（位运算）](https://blog.csdn.net/Revendell/article/details/107059936)<br>
+- [232、用栈实现队列（使用两个栈模拟队列的两头）](https://blog.csdn.net/Revendell/article/details/107061534)<br>
