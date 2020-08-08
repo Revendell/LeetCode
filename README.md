@@ -222,3 +222,4 @@
 - [257、二叉树的所有路径（递归）](https://blog.csdn.net/Revendell/article/details/107813674)<br>
 - [258、各位相加（迭代、数学）](https://blog.csdn.net/Revendell/article/details/107817404)<br>
 - [263、丑数（数学）](https://blog.csdn.net/Revendell/article/details/107869407)<br>
+- [264、丑数 II（动态规划三指针、递归）](https://blog.csdn.net/Revendell/article/details/107883934)<br>
