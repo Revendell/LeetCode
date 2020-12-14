@@ -223,3 +223,22 @@
 - [258、各位相加（迭代、数学）](https://blog.csdn.net/Revendell/article/details/107817404)<br>
 - [263、丑数（数学）](https://blog.csdn.net/Revendell/article/details/107869407)<br>
 - [264、丑数 II（动态规划三指针、递归）](https://blog.csdn.net/Revendell/article/details/107883934)<br>
+- [268、缺失数字（位运算异或、数学求和、索引作为哈希表）](https://blog.csdn.net/Revendell/article/details/107964455)<br>
+- [273、整数转换英文表示](https://blog.csdn.net/Revendell/article/details/108008100)<br>
+- [274、H指数（排序、计数）](https://blog.csdn.net/Revendell/article/details/108059207)<br>
+- [275、H指数 II（二分查找）](https://blog.csdn.net/Revendell/article/details/108081880)<br>
+- [278、第一个错误的版本（二分查找）](https://blog.csdn.net/Revendell/article/details/108099843)<br>
+- [279、完全平方数（四平方定理、递归、动态规划）](https://blog.csdn.net/Revendell/article/details/108364391)<br>
+- [283、移动零（双指针）](https://blog.csdn.net/Revendell/article/details/108364764)<br>
+- [287、寻找重复数（Floyd判圈算法、二分查找）](https://blog.csdn.net/Revendell/article/details/108366172)<br>
+- [289、生命游戏（原地操作）](https://blog.csdn.net/Revendell/article/details/110847411)<br>
+- [290、单词规律（哈希表）](https://blog.csdn.net/Revendell/article/details/110823964)<br>
+- [292、Nim 游戏（智力题）](https://blog.csdn.net/Revendell/article/details/110913073)<br>
+- [295、数据流的中位数（大小堆）](https://blog.csdn.net/Revendell/article/details/110912885)<br>
+- [297、二叉树的序列化与反序列化（前序遍历，递归）](https://blog.csdn.net/Revendell/article/details/110943349)<br>
+- [299、猜数字游戏（哈希表，set，桶思想）](https://blog.csdn.net/Revendell/article/details/110952273)<br>
+- [300、最长上升子序列（动态规划+二分查找）](https://blog.csdn.net/Revendell/article/details/111025834)<br>
+- [301、删除无效的括号（广度优先搜索，BFS——困难）](https://blog.csdn.net/Revendell/article/details/111077716)<br>
+- [303、区域和检索 - 数组不可变](https://blog.csdn.net/Revendell/article/details/111119469)<br>
+- [304、二维区域和检索 - 矩阵不可变](https://blog.csdn.net/Revendell/article/details/111135439)<br>
+- [306、累加数（递归）](https://blog.csdn.net/Revendell/article/details/111185558)<br>
