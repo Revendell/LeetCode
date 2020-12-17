@@ -3,6 +3,8 @@
 #include<algorithm>
 #include<map>
 #include<list>
+#include<set>
+#include<queue>
 using namespace std;
 class Solution {
 public:
@@ -63,31 +65,39 @@ public:
         //以中间的竹节为起点将竹竿折断形成的竹竿一定是最短的，这和这道题一样的道理。
         if(n==1)  return {0};
         vector<int> res;  //最后返回的结果
-        map<int,list<int>> Map;  //记录树节点的有向连接关系：Map[0]={1,2,3}表示0节点指向1,2,3节点
+        map<int,set<int>> Map;  //记录树节点的有向连接关系：Map[0]={1,2,3}表示0节点指向1,2,3节点
         for(int i=0;i<edges.size();i++)
         {
-            Map[edges[i][0]].push_back(edges[i][1]);
-            Map[edges[i][1]].push_back(edges[i][0]);
+            Map[edges[i][0]].insert(edges[i][1]);
+            Map[edges[i][1]].insert(edges[i][0]);
+        }
+        queue<map<int,set<int>>::iterator> delnode;  //记录度为1的节点的迭代器
+        //将度为1的节点的迭代器保存至delnode
+        for(auto iter=Map.begin();iter!=Map.end();iter++)
+        {
+            if(iter->second.size()==1)
+                delnode.push(iter);
         }
         //将度为1的节点不断从无向图中移除，直至剩余节点数小于等于2结束循环
         while(Map.size()>2)
         {
-            vector<map<int,list<int>>::iterator> delnode;  //记录度为1的节点的迭代器
-            //将度为1的节点的迭代器保存至delnode
-            for(auto iter=Map.begin();iter!=Map.end();iter++)
-            {
-                if(iter->second.size()==1)
-                    delnode.push_back(iter);
-            }
             //将度为1的节点删除，删除之前也要将指向它的边去除，比如删除节点2，而Map[3]={1,2,4}那么要将Map[3]中的节点2去除
-            for(int i=0;i<delnode.size();i++)
+            int queuelen=delnode.size();
+            for(int i=0;i<queuelen;i++)
             {
-                map<int,list<int>>::iterator iter=delnode[i];
+                map<int,set<int>>::iterator iter=delnode.front();
+                delnode.pop();
                 //度为1的节点删除之前将指向它的边也去除
-                list<int> curlist=Map[iter->second.back()];
-                list<int>::iterator pos = find(curlist.begin(),curlist.end(),iter->first);
-                curlist.erase(pos);
-                Map[iter->second.back()]=curlist;
+                set<int> curset=Map[*(iter->second.begin())];
+                set<int>::iterator pos = curset.find(iter->first);
+                curset.erase(pos);
+                Map[*(iter->second.begin())]=curset;
+                //将度为1的节点的迭代器保存至delnode
+                if(curset.size()==1)
+                {
+                    map<int,set<int>>::iterator curiter=Map.find(*(iter->second.begin()));
+                    delnode.push(curiter);
+                }
                 //将度为1的节点删除
                 Map.erase(iter);
             }
