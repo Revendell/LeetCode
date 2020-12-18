@@ -245,3 +245,5 @@
 - [307、区域和检索 - 数组可修改（线段树）](https://blog.csdn.net/Revendell/article/details/111219272)<br>
 - [309、最佳买卖股票时机含冷冻期（动态规划）](https://blog.csdn.net/Revendell/article/details/111268710)<br>
 - [310、最小高度树（拓扑排序）](https://blog.csdn.net/Revendell/article/details/111321746)<br>
+- [312、戳气球（动态规划，区间动态规划——困难）](https://blog.csdn.net/Revendell/article/details/111363139)<br>
+- [313、超级丑数（动态规划多指针）](https://blog.csdn.net/Revendell/article/details/111379894)<br>
