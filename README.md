@@ -250,3 +250,4 @@
 - [316、去除重复字母（单调栈）](https://blog.csdn.net/Revendell/article/details/111479016)<br>
 - [318、最大单词长度乘积（位运算）](https://blog.csdn.net/Revendell/article/details/111521874)<br>
 - [319、灯泡开关（数学）](https://blog.csdn.net/Revendell/article/details/111555380)<br>
+- [321、拼接最大数（单调栈+归并——困难）](https://blog.csdn.net/Revendell/article/details/111601630)<br>
