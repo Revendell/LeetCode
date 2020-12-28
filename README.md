@@ -254,3 +254,5 @@
 - [322、零钱兑换（动态规划）](https://blog.csdn.net/Revendell/article/details/111634752)<br>
 - [324、摆动排序 II（nth_element+荷兰旗问题——困难）](https://blog.csdn.net/Revendell/article/details/111710573)<br>
 - [326、3的幂（数学）](https://blog.csdn.net/Revendell/article/details/111740001)<br>
+- [328、奇偶链表（单链表基本操作）](https://blog.csdn.net/Revendell/article/details/111841259)<br>
+- [329、矩阵中的最长递增路径（递归DFS深度优先搜索+备忘录）](https://blog.csdn.net/Revendell/article/details/111870791)<br>
