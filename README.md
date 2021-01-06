@@ -263,3 +263,5 @@
 - [347、前 K 个高频元素（哈希表、堆排序）](https://blog.csdn.net/Revendell/article/details/112134943)<br>
 - [394、字符串解码（栈）](https://blog.csdn.net/Revendell/article/details/112177982)<br>
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
+- [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
+- [543、二叉树的直径（递归dfs深度优先搜索+备忘录、树的高度）](https://blog.csdn.net/Revendell/article/details/112273099)<br>
