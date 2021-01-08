@@ -265,6 +265,10 @@
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
 - [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
 - [437、路径总和 III（双重递归）](https://blog.csdn.net/Revendell/article/details/112310755)<br>
+- [448、找到所有数组中消失的数字（哈希表HashMap，利用数组的下标作为哈希表的映射）](https://blog.csdn.net/Revendell/article/details/112374026)<br>
+- [461、汉明距离（位运算）](https://blog.csdn.net/Revendell/article/details/112372769)<br>
+- [538、把二叉搜索树转换为累加树（递归）](https://blog.csdn.net/Revendell/article/details/112368465)<br>
 - [543、二叉树的直径（递归dfs深度优先搜索+备忘录、树的高度）](https://blog.csdn.net/Revendell/article/details/112273099)<br>
 - [617、合并二叉树（递归——经典）](https://blog.csdn.net/Revendell/article/details/112305416)<br>
 - [647、回文子串（中心扩展法）](https://blog.csdn.net/Revendell/article/details/112317808)<br>
+- [739、每日温度（单调栈，递减栈）](https://blog.csdn.net/Revendell/article/details/112363112)<br>
