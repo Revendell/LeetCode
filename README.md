@@ -269,6 +269,7 @@
 - [438、找到字符串中所有字母异位词（滑动窗口+哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/112428089)<br>
 - [448、找到所有数组中消失的数字（哈希表HashMap，利用数组的下标作为哈希表的映射）](https://blog.csdn.net/Revendell/article/details/112374026)<br>
 - [461、汉明距离（位运算）](https://blog.csdn.net/Revendell/article/details/112372769)<br>
+- [494、目标和（动态规划，01背包）](https://blog.csdn.net/Revendell/article/details/113136809)<br>
 - [538、把二叉搜索树转换为累加树（递归）](https://blog.csdn.net/Revendell/article/details/112368465)<br>
 - [543、二叉树的直径（递归dfs深度优先搜索+备忘录、树的高度）](https://blog.csdn.net/Revendell/article/details/112273099)<br>
 - [617、合并二叉树（递归——经典）](https://blog.csdn.net/Revendell/article/details/112305416)<br>
