@@ -275,5 +275,6 @@
 - [560、和为K的子数组（前缀和+哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113186718)<br>
 - [581、最短无序连续子数组（两次循环遍历、单调栈）](https://blog.csdn.net/Revendell/article/details/113181100)<br>
 - [617、合并二叉树（递归——经典）](https://blog.csdn.net/Revendell/article/details/112305416)<br>
+- [621、任务调度器（贪心算法）](https://blog.csdn.net/Revendell/article/details/113196195)<br>
 - [647、回文子串（中心扩展法）](https://blog.csdn.net/Revendell/article/details/112317808)<br>
 - [739、每日温度（单调栈，递减栈）](https://blog.csdn.net/Revendell/article/details/112363112)<br>
