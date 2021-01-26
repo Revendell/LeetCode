@@ -272,6 +272,7 @@
 - [494、目标和（动态规划，01背包）](https://blog.csdn.net/Revendell/article/details/113136809)<br>
 - [538、把二叉搜索树转换为累加树（递归）](https://blog.csdn.net/Revendell/article/details/112368465)<br>
 - [543、二叉树的直径（递归dfs深度优先搜索+备忘录、树的高度）](https://blog.csdn.net/Revendell/article/details/112273099)<br>
+- [560、和为K的子数组（前缀和+哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113186718)<br>
 - [581、最短无序连续子数组（两次循环遍历、单调栈）](https://blog.csdn.net/Revendell/article/details/113181100)<br>
 - [617、合并二叉树（递归——经典）](https://blog.csdn.net/Revendell/article/details/112305416)<br>
 - [647、回文子串（中心扩展法）](https://blog.csdn.net/Revendell/article/details/112317808)<br>
