@@ -268,6 +268,7 @@
 - [347、前 K 个高频元素（哈希表、堆排序）](https://blog.csdn.net/Revendell/article/details/112134943)<br>
 - [349、两个数组的交集（双指针）](https://blog.csdn.net/Revendell/article/details/113351236)<br>
 - [350、两个数组的交集 II（双指针、哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113353555)<br>
+- [367、有效的完全平方数（牛顿迭代法）](https://blog.csdn.net/Revendell/article/details/113357704)<br>
 - [394、字符串解码（栈）](https://blog.csdn.net/Revendell/article/details/112177982)<br>
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
 - [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
