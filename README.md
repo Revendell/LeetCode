@@ -274,6 +274,7 @@
 - [383、赎金信（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113359824)<br>
 - [387、字符串中的第一个唯一字符（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113383194)<br>
 - [389、找不同（哈希表HashMap、位运算、数学）](https://blog.csdn.net/Revendell/article/details/113384111)<br>
+- [392、判断子序列（双指针）](https://blog.csdn.net/Revendell/article/details/113386235)<br>
 - [394、字符串解码（栈）](https://blog.csdn.net/Revendell/article/details/112177982)<br>
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
 - [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
