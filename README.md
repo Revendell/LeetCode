@@ -259,6 +259,7 @@
 - [331、验证二叉树的前序序列化（二叉树性质）](https://blog.csdn.net/Revendell/article/details/111991234)<br>
 - [332、重新安排行程（递归回溯dfs深度优先搜索）](https://blog.csdn.net/Revendell/article/details/112061177)<br>
 - [334、递增的三元子序列（单调栈）](https://blog.csdn.net/Revendell/article/details/113392272)<br>
+- [335、路径交叉（数学）](https://blog.csdn.net/Revendell/article/details/113522298)<br>
 - [336、回文对（前缀树——困难）](https://blog.csdn.net/Revendell/article/details/113519102)<br>
 - [337、打家劫舍 III（递归）](https://blog.csdn.net/Revendell/article/details/112062414)<br>
 - [338、比特位计数（位运算）](https://blog.csdn.net/Revendell/article/details/112098983)<br>
