@@ -221,6 +221,7 @@
 - [242、有效的字母异位词（排序、哈希表）](https://blog.csdn.net/Revendell/article/details/107223761)<br>
 - [257、二叉树的所有路径（递归）](https://blog.csdn.net/Revendell/article/details/107813674)<br>
 - [258、各位相加（迭代、数学）](https://blog.csdn.net/Revendell/article/details/107817404)<br>
+- [260、只出现一次的数字 III（位运算）](https://blog.csdn.net/Revendell/article/details/113564864)<br>
 - [263、丑数（数学）](https://blog.csdn.net/Revendell/article/details/107869407)<br>
 - [264、丑数 II（动态规划三指针、递归）](https://blog.csdn.net/Revendell/article/details/107883934)<br>
 - [268、缺失数字（位运算异或、数学求和、索引作为哈希表）](https://blog.csdn.net/Revendell/article/details/107964455)<br>
