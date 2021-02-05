@@ -277,6 +277,7 @@
 - [347、前 K 个高频元素（哈希表、堆排序）](https://blog.csdn.net/Revendell/article/details/112134943)<br>
 - [349、两个数组的交集（双指针）](https://blog.csdn.net/Revendell/article/details/113351236)<br>
 - [350、两个数组的交集 II（双指针、哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113353555)<br>
+- [352、将数据流变为多个不相交区间（set集合）](https://blog.csdn.net/Revendell/article/details/113700764)<br>
 - [367、有效的完全平方数（牛顿迭代法）](https://blog.csdn.net/Revendell/article/details/113357704)<br>
 - [371、两整数之和（位运算——困难）](https://blog.csdn.net/Revendell/article/details/113358231)<br>
 - [374、猜数字大小（二分查找折半查找）](https://blog.csdn.net/Revendell/article/details/113358901)<br>
