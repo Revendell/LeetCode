@@ -283,6 +283,7 @@
 - [367、有效的完全平方数（牛顿迭代法）](https://blog.csdn.net/Revendell/article/details/113357704)<br>
 - [371、两整数之和（位运算——困难）](https://blog.csdn.net/Revendell/article/details/113358231)<br>
 - [372、超级次方（快速幂）](https://blog.csdn.net/Revendell/article/details/113812763)<br>
+- [373、查找和最小的K对数字（大顶堆、小顶堆、大小堆）](https://blog.csdn.net/Revendell/article/details/113830476)<br>
 - [374、猜数字大小（二分查找折半查找）](https://blog.csdn.net/Revendell/article/details/113358901)<br>
 - [383、赎金信（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113359824)<br>
 - [387、字符串中的第一个唯一字符（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113383194)<br>
