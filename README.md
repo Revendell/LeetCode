@@ -281,6 +281,7 @@
 - [354、俄罗斯套娃信封问题（最长递增子序列问题：动态规划+二分查找——困难）](https://blog.csdn.net/Revendell/article/details/113742502)<br>
 - [357、计算各个位数不同的数字个数（排列组合）](https://blog.csdn.net/Revendell/article/details/113726431)<br>
 - [367、有效的完全平方数（牛顿迭代法）](https://blog.csdn.net/Revendell/article/details/113357704)<br>
+- [368、最大整除子集（动态规划）](https://blog.csdn.net/Revendell/article/details/113834860)<br>
 - [371、两整数之和（位运算——困难）](https://blog.csdn.net/Revendell/article/details/113358231)<br>
 - [372、超级次方（快速幂）](https://blog.csdn.net/Revendell/article/details/113812763)<br>
 - [373、查找和最小的K对数字（大顶堆、小顶堆、大小堆）](https://blog.csdn.net/Revendell/article/details/113830476)<br>
