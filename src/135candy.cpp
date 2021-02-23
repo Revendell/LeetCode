@@ -2,8 +2,32 @@
 #include<vector>
 #include<algorithm>
 #include<stack>
+#include<numeric>
 using namespace std;
 class Solution {
+public:
+	int candy(vector<int>& ratings) {
+	    //基本思想：贪心算法
+	    //把所有孩子的糖果数初始化为 1；
+        //先从左往右遍历一遍，如果右边孩子的评分比左边的高，则右边孩子的糖果数更新为左边孩子的糖果数加 1；
+        //再从右往左遍历一遍，如果左边孩子的评分比右边的高，且左边孩子当前的糖果数不大于右边孩子的糖果数，则左边孩子的糖果数更新为右边孩子的糖果数加 1
+        if (ratings.size() < 2) return ratings.size();
+        vector<int> nums(ratings.size(), 1);
+        for (int i = 1; i < ratings.size(); ++i) {
+            if (ratings[i] > ratings[i-1])
+                nums[i] = nums[i-1] + 1;
+        }
+        for (int i = ratings.size() - 1; i > 0; --i) {
+            if (ratings[i] < ratings[i-1])
+                nums[i-1] = max(nums[i-1], nums[i] + 1);
+        }
+		int sum = 0;
+		//最后返回nums元素之和
+		for_each(nums.begin(), nums.end(), [&sum](const int& v) {sum += v; });
+		return sum;
+	}
+};
+class Solution1 {
 public:
 	int candy(vector<int>& ratings) {
 		//基本思想：单调递减栈，因为当前孩子给的糖果数取决于相邻的孩子评分，对于评分递减的情况就暂时不确定给当前孩子几个糖果
@@ -49,7 +73,7 @@ public:
 		return sum;
 	}
 };
-class Solution1 {
+class Solution2 {
 public:
 	vector<int> nums;
 	int candy(vector<int>& ratings) {
@@ -80,7 +104,7 @@ public:
 		{
 			nums[pos] = ratings[pos] <= ratings[pos + 1] ? 1 : dfs(ratings, pos + 1) + 1;
 			return nums[pos];
-		} 
+		}
 		//同时小于两边值
 		if (ratings[pos] <= ratings[pos + 1] && ratings[pos] <= ratings[pos - 1])
 		{
