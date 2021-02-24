@@ -191,7 +191,7 @@
 - [212、单词搜索 II（前缀树+深度优先搜索递归回溯——困难）](https://blog.csdn.net/Revendell/article/details/106720358)<br>
 - [213、打家劫舍 II（动态规划）](https://mp.csdn.net/console/editor/html/106731895)<br>
 - [214、最短回文串（KMP算法——困难）](https://blog.csdn.net/Revendell/article/details/106736511)<br>
-- [215、数组中的第K个最大元素（堆排序）](https://blog.csdn.net/Revendell/article/details/106766308)<br>
+- [215、数组中的第K个最大元素（堆排序、快速选择算法——topK问题）](https://blog.csdn.net/Revendell/article/details/106766308)<br>
 - [216、组合总和 III（深度优先搜索递归回溯）](https://blog.csdn.net/Revendell/article/details/106768875)<br>
 - [217、存在重复元素（哈希表）](https://blog.csdn.net/Revendell/article/details/106785154)<br>
 - [218、天际线问题（扫描线算法：建立合适的数据结构哈希表——困难）](https://blog.csdn.net/Revendell/article/details/106789932)<br>
