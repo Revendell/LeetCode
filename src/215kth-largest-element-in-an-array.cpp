@@ -6,9 +6,36 @@ using namespace std;
 class Solution {
 public:
 	int findKthLargest(vector<int>& nums, int k) {
-		//基本思想：排序，取第 k 个
-		sort(nums.begin(), nums.end());
-		return nums[nums.size() - k];
+		//基本思想：快速选择算法，只要n-k的左边是小于nums[n-k]的值，n-k的右边是大于nums[n-k]的值
+		//那么n-k就是我们要找的Top k,问题转化为如何切割左右数组，并找到 Top k 对应的 pivot
+		int target=nums.size()-k;
+		int left=0,right=nums.size()-1;
+		while(left<right)
+        {
+            int mid=quickSelect(nums,left,right);
+            if(mid==target)
+                return nums[mid];
+            if(mid<target)
+                left=mid+1;
+            else
+                right=mid-1;
+        }
+		return nums[left];
+	}
+	int quickSelect(vector<int>& nums,int left,int right)
+	{
+	    int i=left+1,j=right;
+	    while(true)
+        {
+            while(i<right&&nums[i]<=nums[left])
+                i++;
+            while(left<j&&nums[j]>=nums[left])
+                j--;
+            if(i>=j)  break;
+            swap(nums[i],nums[j]);
+        }
+        swap(nums[left],nums[j]);
+        return j;
 	}
 };
 class Solution1 {
@@ -72,7 +99,7 @@ public:
 };
 int main()
 {
-	Solution2 solute;
+	Solution solute;
 	vector<int> nums = { 3,2,3,1,2,4,5,5,6 };
 	int k = 4;
 	cout << solute.findKthLargest(nums,k) << endl;
