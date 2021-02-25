@@ -12,22 +12,17 @@ public:
 		sort(intervals.begin(), intervals.end());
 		i = 0;
 		while (i < intervals.size())
-		{			
+		{
 			left = intervals[i][0];
 			right = intervals[i][1];
 			j = i + 1;
-			while (j < intervals.size())
+			while (j < intervals.size()&&right >= intervals[j][0])
 			{
-				if (intervals[i][1] >= intervals[j][0])
-				{
-					left = min(left, intervals[j][0]);
-					right = max(left, intervals[j][1]);
-				}
-				else
-					break;
+				left = min(left, intervals[j][0]);
+				right = max(right, intervals[j][1]);
 				j++;
 			}
-			res.push_back({ left,right });
+			res.push_back({ left,right});
 			i = j;
 		}
 		return res;
