@@ -308,4 +308,5 @@
 - [621、任务调度器（贪心算法）](https://blog.csdn.net/Revendell/article/details/113196195)<br>
 - [647、回文子串（中心扩展法）](https://blog.csdn.net/Revendell/article/details/112317808)<br>
 - [739、每日温度（单调栈，递减栈）](https://blog.csdn.net/Revendell/article/details/112363112)<br>
+- [763、划分字母区间（排序+双指针）](https://blog.csdn.net/Revendell/article/details/114085406)<br>
 - [1143、最长公共子序列（动态规划——困难）](https://blog.csdn.net/Revendell/article/details/113804930)<br>
