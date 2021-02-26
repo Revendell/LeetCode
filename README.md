@@ -288,6 +288,7 @@
 - [374、猜数字大小（二分查找折半查找）](https://blog.csdn.net/Revendell/article/details/113358901)<br>
 - [375、猜数字大小 II（动态规划，区间动态规划，矩阵链乘法——总结）](https://blog.csdn.net/Revendell/article/details/113837935)<br>
 - [378、有序矩阵中第 K 小的元素（归并+小顶堆）](https://blog.csdn.net/Revendell/article/details/114140690)<br>
+- [380、常数时间插入、删除和获取随机元素（哈希表）](https://blog.csdn.net/Revendell/article/details/114142767)<br>
 - [383、赎金信（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113359824)<br>
 - [387、字符串中的第一个唯一字符（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113383194)<br>
 - [389、找不同（哈希表HashMap、位运算、数学）](https://blog.csdn.net/Revendell/article/details/113384111)<br>
