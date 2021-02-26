@@ -290,6 +290,7 @@
 - [378、有序矩阵中第 K 小的元素（归并+小顶堆）](https://blog.csdn.net/Revendell/article/details/114140690)<br>
 - [380、常数时间插入、删除和获取随机元素（哈希表）](https://blog.csdn.net/Revendell/article/details/114142767)<br>
 - [383、赎金信（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113359824)<br>
+- [384、打乱数组（洗牌算法）](https://blog.csdn.net/Revendell/article/details/114153427)<br>
 - [387、字符串中的第一个唯一字符（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113383194)<br>
 - [389、找不同（哈希表HashMap、位运算、数学）](https://blog.csdn.net/Revendell/article/details/113384111)<br>
 - [392、判断子序列（双指针）](https://blog.csdn.net/Revendell/article/details/113386235)<br>
