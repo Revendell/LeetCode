@@ -295,6 +295,7 @@
 - [389、找不同（哈希表HashMap、位运算、数学）](https://blog.csdn.net/Revendell/article/details/113384111)<br>
 - [392、判断子序列（双指针）](https://blog.csdn.net/Revendell/article/details/113386235)<br>
 - [394、字符串解码（栈）](https://blog.csdn.net/Revendell/article/details/112177982)<br>
+- [395、至少有K个重复字符的最长子串（分治法）](https://blog.csdn.net/Revendell/article/details/114165492)<br>
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
 - [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
 - [416、分割等和子集（动态规划，01背包问题）](https://blog.csdn.net/Revendell/article/details/112392931)<br>
