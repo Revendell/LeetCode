@@ -49,7 +49,7 @@ public:
         {
             res=min_heap.top();
             min_heap.pop();
-            if(res.y<matrix.size())
+            if(res.y+1<matrix.size())
                 min_heap.push(point(matrix[res.x][res.y+1],res.x,res.y+1));
         }
         return res.val;
