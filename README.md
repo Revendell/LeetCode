@@ -298,6 +298,7 @@
 - [395、至少有K个重复字符的最长子串（分治法）](https://blog.csdn.net/Revendell/article/details/114165492)<br>
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
 - [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
+- [412、Fizz Buzz（数字和字符串相互转化）](https://blog.csdn.net/Revendell/article/details/114168200)<br>
 - [416、分割等和子集（动态规划，01背包问题）](https://blog.csdn.net/Revendell/article/details/112392931)<br>
 - [437、路径总和 III（双重递归）](https://blog.csdn.net/Revendell/article/details/112310755)<br>
 - [438、找到字符串中所有字母异位词（滑动窗口+哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/112428089)<br>
