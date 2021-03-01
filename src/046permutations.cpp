@@ -6,6 +6,33 @@ public:
 	vector<vector<int>> res;
 	vector<vector<int>> permute(vector<int>& nums) {
 		//基本思想：典型的递归回溯法，递归回溯找寻所有可能结果保存到res
+		//对于每一个当前位置i，我们可以将其于之后的任意位置交换，然后继续处理位置i+1，直到处理到最后一位。
+		Recursion(nums, 0);
+		return res;
+	}
+	void Recursion(vector<int> nums, int cnt)
+	{
+		//cnt计数cur中元素个数，当等于nums.size()，将当前的一种组合cur保存到res
+		if (cnt == nums.size())
+		{
+			res.push_back(nums);
+			return;
+		}
+		//循环nums所有元素
+		for (int i = cnt; i < nums.size(); i++)
+		{
+			swap(nums[i],nums[cnt]);
+			Recursion(nums, cnt + 1);
+			swap(nums[i],nums[cnt]);	
+		}
+		return;
+	}
+};
+class Solution1 {
+public:
+	vector<vector<int>> res;
+	vector<vector<int>> permute(vector<int>& nums) {
+		//基本思想：典型的递归回溯法，递归回溯找寻所有可能结果保存到res
 		//cur保存当前某一种可能的组合情况，cnt计数cur中元素个数，当等于nums.size()，将当前的一种组合cur保存到res
 		vector<int> cur;
 		Recursion(nums, cur, 0);
