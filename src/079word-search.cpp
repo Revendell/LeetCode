@@ -6,6 +6,47 @@ class Solution {
 public:
 	vector<vector<bool>> visited;
 	bool exist(vector<vector<char>>& board, string word) {
+		//基本思想：递归回溯法，传引用否则超时，二重循环遍历board
+		//然后在board[i][j]四个方向上递归回溯找下一个word[cnt+1]，直到cnt=word.size-1，返回true
+		//注意点：同一个单元格内的字母不允许被重复使用，所以用二维数组visited判断该单元格是否访问过
+		int i, j, cnt = 0;
+		visited = vector<vector<bool>>(board.size(), vector<bool>(board[0].size(), false));
+		for (i = 0; i < board.size(); i++)
+		{
+			for (j = 0; j < board[i].size(); j++)
+			{
+				if (Recursion(board, i, j, word, cnt))
+					return true;
+			}
+		}
+		return false;
+	}
+	bool Recursion(vector<vector<char>>& board, int i, int j, string &word, int cnt)
+	{
+		if(i<0||i>=board.size()||j<0||j>board[i].size())
+			return false;
+		if(visited[i][j]||board[i][j] != word[cnt])
+			return false;
+		if (cnt == word.size()-1)
+			return true;
+		//在board[i][j]四个方向上递归回溯找下一个word[cnt+1]，直到cnt=word.size-1，返回true
+		visited[i][j]=true;
+		if (Recursion(board, i - 1, j, word, cnt + 1))
+			return true;
+		if (Recursion(board, i + 1, j, word, cnt + 1))
+			return true;
+		if (Recursion(board, i, j - 1, word, cnt + 1))
+			return true;
+		if (Recursion(board, i, j + 1, word, cnt + 1))
+			return true;
+		visited[i][j]=false;
+		return false;
+	}
+};
+class Solution1 {
+public:
+	vector<vector<bool>> visited;
+	bool exist(vector<vector<char>>& board, string word) {
 		//基本思想：递归回溯法，传引用否则超时，首先在board[i][j]上找到word[0]，
 		//然后在board[i][j]四个方向上递归回溯找下一个word[cnt]，直到cnt=word.size，返回true
 		//注意点：同一个单元格内的字母不允许被重复使用，所以用二维数组visited判断该单元格是否访问过
