@@ -131,7 +131,7 @@
 - [128、最长连续序列（HashMap）](https://blog.csdn.net/Revendell/article/details/106121810)<br>
 - [129、求根到叶子节点数字之和（递归）](https://blog.csdn.net/Revendell/article/details/106124443)<br>
 - [130、被围绕的区域（深度优先搜索）](https://blog.csdn.net/Revendell/article/details/106149963)<br>
-- [131、分割回文串（递归分治法）](https://blog.csdn.net/Revendell/article/details/106153289)<br>
+- [131、分割回文串（递归回溯法、递归分治法）](https://blog.csdn.net/Revendell/article/details/106153289)<br>
 - [132、分割回文串 II（动态规划+中心扩展）](https://blog.csdn.net/Revendell/article/details/106160823)<br>
 - [133、克隆图（递归深度优先搜索+HashMap）](https://blog.csdn.net/Revendell/article/details/106163439)<br>
 - [134、加油站（贪心法一次遍历）](https://blog.csdn.net/Revendell/article/details/106175481)<br>
