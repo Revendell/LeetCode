@@ -7,7 +7,7 @@ class Solution {
 public:
 	vector<vector<string>> res;
 	vector<vector<string>> partition(string s) {
-		//基本思想：递归分治法，先将每个单独字母看成一个回文串，然后不断递归合并成更长的回文串
+		//基本思想：递归分治法，超时，先将每个单独字母看成一个回文串，然后不断递归合并成更长的回文串
 		//每次合并后，将新的分割形式加入res，直到不能合并出更大的回文串
 		vector<string> cur;
 		//先将s中每个字母分割是一种答案
@@ -32,30 +32,63 @@ public:
 			if (i + 1 < cur.size() && cur[i] == cur[i + 1])
 			{
 				vector<string> temp;
-				for (int k = 0; k < i; k++)
-					temp.push_back(cur[k]);
+				temp.insert(temp.end(),cur.begin(),cur.begin()+i);
 				temp.push_back(cur[i] + cur[i + 1]);
-				for (int k = i + 2; k < cur.size(); k++)
-					temp.push_back(cur[k]);
+				temp.insert(temp.end(),cur.begin()+i+2,cur.end());
 				Recursion(temp);
 			}
 			//可以合并的回文情况a+b+a
 			if (i + 2 < cur.size() && cur[i] == cur[i + 2])
 			{
 				vector<string> temp;
-				for (int k = 0; k < i; k++)
-					temp.push_back(cur[k]);
+				temp.insert(temp.end(),cur.begin(),cur.begin()+i);
 				temp.push_back(cur[i] + cur[i + 1] + cur[i + 2]);
-				for (int k = i + 3; k < cur.size(); k++)
-					temp.push_back(cur[k]);
+				temp.insert(temp.end(),cur.begin()+i+3,cur.end());
 				Recursion(temp);
 			}
 		}
 	}
 };
+class Solution1 {
+public:
+	vector<vector<string>> res;
+	vector<vector<string>> partition(string s) {
+		//基本思想：递归回溯法，遍历s中的每一个可以组成回文串的子串加入cur中，直到下标pos结束
+		vector<string> cur;
+		Recursion(s,cur,0);
+		return res;
+	}
+	void Recursion(string& s,vector<string> cur,int pos)
+	{
+		if(pos==s.size())
+			res.push_back(cur);
+		for(int i=pos;i<s.size();i++)
+		{
+			if(checkPalind(s.substr(pos,i-pos+1)))
+			{
+				cur.push_back(s.substr(pos,i-pos+1));
+				Recursion(s,cur,i+1);
+				cur.pop_back();
+			}
+		}
+	}
+	bool checkPalind(string s)
+	{
+		//判断子串是否是回文串
+		int i=0,j=s.size()-1;
+		while(i<j)
+		{
+			if(s[i]!=s[j])
+				return false;
+			i++;
+			j--;
+		}
+		return true;
+	}
+};
 int main()
 {
-	Solution solute;
+	Solution1 solute;
 	string s = "abbaaba";
 	vector<vector<string>> res = solute.partition(s);
 	for (int i = 0; i < res.size(); i++)
