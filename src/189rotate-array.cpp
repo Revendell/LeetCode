@@ -4,34 +4,20 @@
 using namespace std;
 class Solution {
 public:
-	void rotate(vector<int>& nums, int k) {
-		//基本思想：使用环状替换，时间复杂度O(n)空间复杂度O(1)
-		if (nums.size() == 0 || k == 0)
-			return;
-		//i指向当前位置下标，next指向下一个位置下标
-		int i = 0, temp, cur = nums[0], next, cnt = nums.size();
-		//flag标记位置，因为可能循环到已经替换过的位置，需要到下一个位置继续循环替换
-		int* flag = &nums[0];
-		//总共遍历次数为O(n)
-		while (cnt)
-		{
-			next = (i + k) % nums.size();
-			temp = nums[next];
-			nums[next] = cur;
-			cur = temp;
-			i = next;
-			if (flag == &nums[i])
-			{
-				i++;
-				if (i == nums.size())
-					return;
-				cur = nums[i];
-				flag = &nums[i];
-			}
-			cnt--;
-		}
-		return;
-	}
+    void rotate(vector<int>& nums, int k) {
+        int n = nums.size();
+        k = k % n;
+        int count = gcd(k, n);
+        for (int start = 0; start < count; ++start) {
+            int current = start;
+            int prev = nums[start];
+            do {
+                int next = (current + k) % n;
+                swap(nums[next], prev);
+                current = next;
+            } while (start != current);
+        }
+    }
 };
 class Solution1 {
 public:
