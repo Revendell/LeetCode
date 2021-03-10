@@ -4,6 +4,40 @@ using namespace std;
 class Solution {
 public:
 	string convert(string s, int numRows) {
+		//简化版：找规律，循环周期n=2*numRows-2，第一行和第numRows行，按照n间隔摆放
+		//其他行，每次摆放两个字符，分别按照n-2*(i-1)和2*(i-1)间隔摆放
+		if(numRows==1)  return s;
+		string res;
+		int n=2*numRows-2;
+		for(int i=1;i<=numRows;i++)
+		{
+			int index=i-1;
+			if(i==1||i==numRows)
+			{
+				while(index<s.size())
+				{
+					res.push_back(s[index]);
+					index+=n;
+				}
+			}
+			else
+			{
+				while(index<s.size())
+				{
+					res.push_back(s[index]);
+					index+=n-2*(i-1);
+					if(index<s.size())
+						res.push_back(s[index]);
+					index+=2*(i-1);
+				}
+			}
+		}
+		return res;
+	}
+};
+class Solution1 {
+public:
+	string convert(string s, int numRows) {
 		int len = s.size();  //字符串s的长度
 		int m = numRows;  //输入的行号
 		int n = 2 * m - 2;  //Z字循环的最小单元长度
