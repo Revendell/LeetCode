@@ -3,6 +3,25 @@
 using namespace std;
 class Solution {
 public:
+    int divide(int dividend, int divisor) {
+		//简化版本：增倍除数法
+        long res=0,a=abs(dividend),b=abs(divisor);        
+        while(a>=b){
+            long cnt=1,base=b;
+            while(a>=base)
+			{
+				res+=cnt;
+				a-=base;
+				cnt<<=1;
+				base<<=1;
+			}	
+        }
+        res=((dividend<0)^(divisor<0))?-res:res;
+        return (INT_MAX<res||res<INT_MIN)?INT_MAX:res;
+    }
+};
+class Solution1 {
+public:
 	int divide(int dividend, int divisor) {
 		int ret = 0;  //返回的结果值商
 		int flag = -1;
