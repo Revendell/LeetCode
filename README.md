@@ -4,7 +4,7 @@
 - [1、两数之和（双指针）](https://blog.csdn.net/Revendell/article/details/103226344)<br>
 - [2、两数相加（单链表）](https://blog.csdn.net/Revendell/article/details/103230049)<br>
 - [3、无重复字符的最长子串（滑动窗口+哈希表）](https://blog.csdn.net/Revendell/article/details/103244573)<br>
-- [4、寻找两个有序数组的中位数（折半查找）](https://blog.csdn.net/Revendell/article/details/103256310)<br>
+- [4、寻找两个有序数组的中位数（二分查找）](https://blog.csdn.net/Revendell/article/details/103256310)<br>
 - [5、最大回文子串（中心扩展法、动态规划）](https://blog.csdn.net/Revendell/article/details/103300317)<br>
 - [6、Z字形变换（找规律对Z字型按行访问）](https://blog.csdn.net/Revendell/article/details/103316424)<br>
 - [7、整数反转（取余整除）](https://blog.csdn.net/Revendell/article/details/103316543)<br>
@@ -33,9 +33,9 @@
 - [30、串联所有单词的子串（HashMap）](https://blog.csdn.net/Revendell/article/details/104981146)<br>
 - [31、下一个排列（数组中数字的排序）](https://blog.csdn.net/Revendell/article/details/105001888)<br>
 - [32、最长有效括号（栈）](https://blog.csdn.net/Revendell/article/details/105011706)<br>
-- [33、搜索旋转排序数组（折半查找）](https://blog.csdn.net/Revendell/article/details/105028452)<br>
-- [34、在排序数组中查找元素的第一个和最后一个位置（折半查找）](https://blog.csdn.net/Revendell/article/details/105049053)<br>
-- [35、搜索插入位置（折半查找）](https://blog.csdn.net/Revendell/article/details/103958788)<br>
+- [33、搜索旋转排序数组（二分查找）](https://blog.csdn.net/Revendell/article/details/105028452)<br>
+- [34、在排序数组中查找元素的第一个和最后一个位置（二分查找）](https://blog.csdn.net/Revendell/article/details/105049053)<br>
+- [35、搜索插入位置（二分查找）](https://blog.csdn.net/Revendell/article/details/103958788)<br>
 - [36、有效的数独（暴力法、HashMap）](https://blog.csdn.net/Revendell/article/details/105074042)<br>
 - [37、解数独（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105102064)<br>
 - [38、外观数列（循环遍历）](https://blog.csdn.net/Revendell/article/details/105118505)<br>
@@ -81,7 +81,7 @@
 - [78、子集（字典排序（二进制排序）子集、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105635812)<br>
 - [79、单词搜索（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105638148)<br>
 - [80、删除排序数组中的重复项 II（双指针）](https://blog.csdn.net/Revendell/article/details/105657347)<br>
-- [81、搜索旋转排序数组 II（折半查找）](https://blog.csdn.net/Revendell/article/details/105659488)<br>
+- [81、搜索旋转排序数组 II（二分查找）](https://blog.csdn.net/Revendell/article/details/105659488)<br>
 - [82、删除排序链表中的重复元素 II（单链表操作）](https://blog.csdn.net/Revendell/article/details/105681697)<br>
 - [83、删除排序链表中的重复元素（单链表操作）](https://blog.csdn.net/Revendell/article/details/105682126)<br>
 - [84、柱状图中最大的矩形（单调栈、分治法、暴力法——困难）](https://blog.csdn.net/Revendell/article/details/105694583)<br>
@@ -153,11 +153,11 @@
 - [150、逆波兰表达式求值（栈）](https://blog.csdn.net/Revendell/article/details/106333213)<br>
 - [151、翻转字符串里的单词（暴力、istringstream）](https://blog.csdn.net/Revendell/article/details/106337760)<br>
 - [152、乘积最大子数组（动态规划、贪心）](https://blog.csdn.net/Revendell/article/details/106359206)<br>
-- [153、寻找旋转排序数组中的最小值（折半查找）](https://blog.csdn.net/Revendell/article/details/106360213)<br>
-- [154、寻找旋转排序数组中的最小值 II（折半查找）](https://blog.csdn.net/Revendell/article/details/106360741)<br>
+- [153、寻找旋转排序数组中的最小值（二分查找）](https://blog.csdn.net/Revendell/article/details/106360213)<br>
+- [154、寻找旋转排序数组中的最小值 II（二分查找）](https://blog.csdn.net/Revendell/article/details/106360741)<br>
 - [155、最小栈（辅助栈、HashMap）](https://blog.csdn.net/Revendell/article/details/106380114)<br>
 - [160、相交链表（双指针法）](https://blog.csdn.net/Revendell/article/details/106386172)<br>
-- [162、寻找峰值（折半查找）](https://blog.csdn.net/Revendell/article/details/106403729)<br>
+- [162、寻找峰值（二分查找）](https://blog.csdn.net/Revendell/article/details/106403729)<br>
 - [164、最大间距（桶排序+鸽笼原理）](https://blog.csdn.net/Revendell/article/details/106410662)<br>
 - [165、比较版本号（istrigstream、双指针、额外O(n)空间）](https://blog.csdn.net/Revendell/article/details/106429006)<br>
 - [166、分数到小数（HashMap）](https://blog.csdn.net/Revendell/article/details/106441918)<br>
@@ -286,7 +286,7 @@
 - [371、两整数之和（位运算——困难）](https://blog.csdn.net/Revendell/article/details/113358231)<br>
 - [372、超级次方（快速幂）](https://blog.csdn.net/Revendell/article/details/113812763)<br>
 - [373、查找和最小的K对数字（大顶堆、小顶堆、大小堆）](https://blog.csdn.net/Revendell/article/details/113830476)<br>
-- [374、猜数字大小（二分查找折半查找）](https://blog.csdn.net/Revendell/article/details/113358901)<br>
+- [374、猜数字大小（二分查找）](https://blog.csdn.net/Revendell/article/details/113358901)<br>
 - [375、猜数字大小 II（动态规划，区间动态规划，矩阵链乘法——总结）](https://blog.csdn.net/Revendell/article/details/113837935)<br>
 - [376、摆动序列（动态规划）](https://blog.csdn.net/Revendell/article/details/114190262)<br>
 - [378、有序矩阵中第 K 小的元素（归并+小顶堆）](https://blog.csdn.net/Revendell/article/details/114140690)<br>
