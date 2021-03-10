@@ -1,7 +1,42 @@
 #include<iostream>
 #include<vector>
+#include<stack>
 using namespace std;
 class Solution {
+public:
+	bool isValid(string s) {
+		//¼ò»¯°æ
+		stack<char> st;
+		for(auto c:s)
+		{
+			if(c == '(' || c == '[' || c == '{')
+				st.push(c);
+			else if(c == ')')
+			{
+				if(!st.empty()&&st.top()=='(')
+					st.pop();
+				else
+					return false;
+			}
+			else if(c == '}')
+			{
+				if(!st.empty()&&st.top()=='{')
+					st.pop();
+				else
+					return false;
+			}
+			else if(c == ']')
+			{
+				if(!st.empty()&&st.top()=='[')
+					st.pop();
+				else
+					return false;
+			}
+		}
+		return st.empty();
+	}
+};
+class Solution1 {
 public:
 	bool isValid(string s) {
 		vector<char> s_stack;  //½¨Á¢Õ»
