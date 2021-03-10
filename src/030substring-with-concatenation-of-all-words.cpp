@@ -5,6 +5,37 @@
 using namespace std;
 class Solution {
 public:
+    vector<int> findSubstring(string s, vector<string>& words) {
+		//简化版：滑动窗口+哈希表
+		vector<int> res;
+		if(words.size()==0)  return res;
+		map<string,int> Map;
+		for(auto word:words)
+			Map[word]++;
+		int wlen=words[0].size();
+		for(int i=0;i+words.size()*wlen<=s.size();i++)
+		{
+			map<string,int> tmp=Map;
+			int cnt=0;
+			for(int j=0;j<words.size();j++)
+			{
+				string cur=s.substr(i+j*wlen,wlen);
+				if(tmp[cur]>0)
+				{
+					tmp[cur]--;
+					cnt++;
+				}
+				else
+					break;
+			}
+			if(cnt==words.size())
+				res.push_back(i);
+		}
+		return res;
+    }
+};
+class Solution1 {
+public:
 	vector<int> findSubstring(string s, vector<string>& words) {
 		vector<int> res;
 		//建立两个HashMap，words一个HashMap1，对字符串s窗口大小为word_len*words_len的字串一个HashMap2，如果两个HashMap相等则匹配成功记录起始下标
