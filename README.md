@@ -3,7 +3,7 @@
 ## 题解
 - [1、两数之和（双指针）](https://blog.csdn.net/Revendell/article/details/103226344)<br>
 - [2、两数相加（单链表）](https://blog.csdn.net/Revendell/article/details/103230049)<br>
-- [3、无重复字符的最长子串（HashMap）](https://blog.csdn.net/Revendell/article/details/103244573)<br>
+- [3、无重复字符的最长子串（滑动窗口+哈希表）](https://blog.csdn.net/Revendell/article/details/103244573)<br>
 - [4、寻找两个有序数组的中位数（折半查找）](https://blog.csdn.net/Revendell/article/details/103256310)<br>
 - [5、最大回文子串（中心扩展法、动态规划）](https://blog.csdn.net/Revendell/article/details/103300317)<br>
 - [6、Z字形变换（找规律对Z字型按行访问）](https://blog.csdn.net/Revendell/article/details/103316424)<br>
