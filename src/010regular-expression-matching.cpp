@@ -1,6 +1,33 @@
 #include<iostream>
 #include<string>
+#include<vector>
 using namespace std;
+class Solution {
+public:
+	bool isMatch(string s, string p) {
+		//简化版：动态规划，初始化dp[i][j]=false，
+		//如果s[i-1]==p[j-1]||p[j-1]=='.'，则dp[i][j]=dp[i-1][j-1]
+		//如果p[j-1]=='*'，可以选择匹配0次则dp[i][j]=dp[i][j-2]，可以选择匹配一次这时候必须s当前字符和p前一个字符匹配，匹配完因为*可以继续匹配字符，所以相当于忽略了s中的当前字符(也可以想成是s中增长了一个字符，此时p中*匹配了这个字符所以要看dp[i-1][j]增长这个字符之前是否匹配)，所以还必须满足dp[i-1][j]
+		vector<vector<bool>> dp(s.size()+1,vector<bool>(p.size()+1,false));
+		dp[0][0]=true;
+		for(int i=2;i<=p.size();i++)
+		{
+			if(p[i-1]=='*')
+				dp[0][i]=dp[0][i-2];
+		}
+		for(int i=1;i<=s.size();i++)
+		{
+			for(int j=1;j<=p.size();j++)
+			{
+				if(s[i-1]==p[j-1]||p[j-1]=='.')
+					dp[i][j]=dp[i-1][j-1];
+				else if(p[j-1]=='*')
+					dp[i][j]=dp[i][j-2]||(s[i-1]==p[j-2]||p[j-2]=='.')&&dp[i-1][j];
+			}
+		}
+		return dp[s.size()][p.size()];	
+	}
+};
 //递归回溯法：容易理解，空间时间复杂度高
 class Solution1 {
 public:
