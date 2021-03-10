@@ -5,6 +5,49 @@ using namespace std;
 class Solution {
 public:
 	double findMedianSortedArrays(vector<int>& a, vector<int>& b) {
+		//简化版：half_len必须是(a.size()+b.size()+1)/2以及iright=a.size()，
+		//因为如果m+n是奇数，那么中位数就是max_left=max(a[i-1],b[j-1])，刻意将中位数放在左边
+		//如果m+n是偶数，那么中位数就是(max_left+min_right)/2.0，min_right=min(a[i],b[j])
+		if(a.size()>b.size())
+			return findMedianSortedArrays(b,a);
+		int ileft=0,iright=a.size(),half_len=(a.size()+b.size()+1)/2;
+		int max_left,min_right,i,j;
+		while(ileft<=iright)
+		{
+			i=(ileft+iright)/2;
+			j=half_len-i;
+			if(i>0&&a[i-1]>b[j])
+				iright=i-1;
+			else if(i<a.size()&&a[i]<b[j-1])
+				ileft=i+1;
+			else
+			{
+				if(i==0)
+					max_left=b[j-1];
+				else if(j==0)
+					max_left=a[i-1];
+				else
+					max_left=max(a[i-1],b[j-1]);
+
+				if((a.size()+b.size())&1)
+					return max_left;
+
+				if(i==a.size())
+					min_right=b[j];
+				else if(j==b.size())
+					min_right=a[i];
+				else
+					min_right=min(a[i],b[j]);
+
+				return (max_left+min_right)/2.0;
+			}
+		}
+		return -1;
+	}
+};
+class Solution1 {
+public:
+	double findMedianSortedArrays(vector<int>& a, vector<int>& b) {
 		int imin, imax, half_len;  //imin和imax用于折半查找数组a中的i
 		int max_of_left, min_of_right;  //max_of_left中位数左边最大值，min_of_right右边最小值
 		int m = a.size(), n = b.size();
@@ -35,35 +78,28 @@ public:
 			//找到i满足a[i-1]<=b[j]和b[j-1]<=a[i]，且i+j=(m+n+1)/2
 			else {
 				//找到左边的最大值max(a[i-1], b[j-1])，可能i=0，数组a无左边值；j=0，数组b无左边值
-				if (i == 0) {
+				if (i == 0)
 					max_of_left = b[j - 1];
-				}
-				else if (j == 0) {
+				else if (j == 0)
 					max_of_left = a[i - 1];
-				}
-				else {
+				else
 					max_of_left = max(a[i - 1], b[j - 1]);
-				}
-				//找到右边的最小值min(a[i], b[j])，可能i-1=m-1，数组a无右边值；j-1=n-1数组b无右边值
-				if (i == m) {
-					min_of_right = b[j];
-				}
-				else if (j == n) {
-					min_of_right = a[i];
-				}
-				else {
-					min_of_right = min(a[i], b[j]);
-				}
 
 				//当m+n等于奇数，中位数就是第i+j=(m + n + 1) / 2个，因为a的左边是a[0]到a[i-1]共i个元素，b的左边是b[0]到b[j-1]共j个元素，所以第i+j大元素就是max(a[i-1],a[j-1])=max_of_left
-				if ((m + n) % 2==1) {
+				if ((m + n) % 2==1)
 					return max_of_left;
-				}
+
+				//找到右边的最小值min(a[i], b[j])，可能i-1=m-1，数组a无右边值；j-1=n-1数组b无右边值
+				if (i == m)
+					min_of_right = b[j];
+				else if (j == n)
+					min_of_right = a[i];
+				else
+					min_of_right = min(a[i], b[j]);
+
 				//当m+n等于偶数，中位数就是第i+j=(m + n + 1) / 2和i+j+1大值的平均
 				//因为a的左边是a[0]到a[i-1]共i个元素，b的左边是b[0]到b[j-1]共j个元素，所以第i+j大元素就是max(a[i-1],a[j-1])=max_of_left，i的右边最小的是a[i],j的右边最小的是b[j]，所以第i+j+1大元素就是min(a[i],b[j])=min_of_right
-				else {
-					return ((max_of_left + min_of_right) / 2.0);
-				}	
+				return ((max_of_left + min_of_right) / 2.0);	
 			}
 		}
 		return -1;
