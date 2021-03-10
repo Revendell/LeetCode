@@ -3,7 +3,25 @@ using namespace std;
 struct ListNode {
 	int val;
 	ListNode* next;
+	ListNode() : val(0), next(nullptr) {}
 	ListNode(int x) : val(x), next(NULL) {}
+	ListNode(int x, ListNode *next) : val(x), next(next) {}
+};
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+		//简化版：快慢指针
+		ListNode* tmp=new ListNode(0,head);
+        ListNode* fast = tmp, *slow=tmp;
+		while(n--)
+			fast=fast->next;
+        while (fast->next) {
+            fast = fast->next;
+            slow = slow->next;
+        }
+        slow->next = slow->next->next;
+        return tmp->next;
+    }
 };
 //双指针法
 class Solution1 {
