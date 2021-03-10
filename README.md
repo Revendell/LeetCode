@@ -19,7 +19,7 @@
 - [16、最接近的三数之和（双指针）](https://blog.csdn.net/Revendell/article/details/103428117)<br>
 - [17、电话号码的字母组合（递归调用法）](https://blog.csdn.net/Revendell/article/details/103450593)<br>
 - [18、四数之和（双指针）](https://blog.csdn.net/Revendell/article/details/103438442)<br>
-- [19、删除链表的倒数第N个节点（双指针、两次遍历）](https://blog.csdn.net/Revendell/article/details/103444927)<br>
+- [19、删除链表的倒数第N个节点（双指针、快慢指针）](https://blog.csdn.net/Revendell/article/details/103444927)<br>
 - [20、有效的括号（栈）](https://blog.csdn.net/Revendell/article/details/103446886)<br>
 - [21、合并两个有序链表（有序链表合并）](https://blog.csdn.net/Revendell/article/details/103460468)<br>
 - [22、括号生成（递归回溯法）](https://blog.csdn.net/Revendell/article/details/103468918)<br>
