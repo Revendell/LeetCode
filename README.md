@@ -13,7 +13,7 @@
 - [10、正则表达式匹配（递归回溯法、动态规划）](https://blog.csdn.net/Revendell/article/details/103394816)<br>
 - [11、盛最多水的容器（双指针、暴力穷举法）](https://blog.csdn.net/Revendell/article/details/103357034)<br>
 - [12、整数转罗马数字（暴力法、贪心法）](https://blog.csdn.net/Revendell/article/details/103398130)<br>
-- [13、罗马数字转整数（HashMap）](https://blog.csdn.net/Revendell/article/details/103406765)<br>
+- [13、罗马数字转整数（哈希表）](https://blog.csdn.net/Revendell/article/details/103406765)<br>
 - [14、最长公共前缀（双指针）](https://blog.csdn.net/Revendell/article/details/103408606)<br>
 - [15、三数之和（双指针）](https://blog.csdn.net/Revendell/article/details/103424913)<br>
 - [16、最接近的三数之和（双指针）](https://blog.csdn.net/Revendell/article/details/103428117)<br>
@@ -30,13 +30,13 @@
 - [27、移除元素（删除元素法、双指针）](https://blog.csdn.net/Revendell/article/details/103537223)<br>
 - [28、实现strStr()（KMP算法、字符串匹配）](https://blog.csdn.net/Revendell/article/details/103563947)<br>
 - [29、两数相除（增倍除数法）](https://blog.csdn.net/Revendell/article/details/103579888)<br>
-- [30、串联所有单词的子串（HashMap）](https://blog.csdn.net/Revendell/article/details/104981146)<br>
+- [30、串联所有单词的子串（哈希表）](https://blog.csdn.net/Revendell/article/details/104981146)<br>
 - [31、下一个排列（数组中数字的排序）](https://blog.csdn.net/Revendell/article/details/105001888)<br>
 - [32、最长有效括号（栈）](https://blog.csdn.net/Revendell/article/details/105011706)<br>
 - [33、搜索旋转排序数组（二分查找）](https://blog.csdn.net/Revendell/article/details/105028452)<br>
 - [34、在排序数组中查找元素的第一个和最后一个位置（二分查找）](https://blog.csdn.net/Revendell/article/details/105049053)<br>
 - [35、搜索插入位置（二分查找）](https://blog.csdn.net/Revendell/article/details/103958788)<br>
-- [36、有效的数独（暴力法、HashMap）](https://blog.csdn.net/Revendell/article/details/105074042)<br>
+- [36、有效的数独（暴力法、哈希表）](https://blog.csdn.net/Revendell/article/details/105074042)<br>
 - [37、解数独（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105102064)<br>
 - [38、外观数列（循环遍历）](https://blog.csdn.net/Revendell/article/details/105118505)<br>
 - [39、组合总和（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105125318)<br>
@@ -49,7 +49,7 @@
 - [46、全排列（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105250593)<br>
 - [47、全排列II（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105270494)<br>
 - [48、旋转图像（找规律模拟旋转过程）](https://blog.csdn.net/Revendell/article/details/105273995)<br>
-- [49、字母异位词分组（HashMap）](https://blog.csdn.net/Revendell/article/details/105294252)<br>
+- [49、字母异位词分组（哈希表）](https://blog.csdn.net/Revendell/article/details/105294252)<br>
 - [50、Pow(x, n)（快速幂算法）](https://blog.csdn.net/Revendell/article/details/105310822)<br>
 - [51、N皇后（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105328087)<br>
 - [52、N皇后 II（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105328399)<br>
@@ -76,7 +76,7 @@
 - [73、矩阵置零（额外空间常数级）](https://blog.csdn.net/Revendell/article/details/105581954)<br>
 - [74、搜索二维矩阵（二分查找）](https://blog.csdn.net/Revendell/article/details/105583657)<br>
 - [75、颜色分类（荷兰国旗问题，三指针）](https://blog.csdn.net/Revendell/article/details/105599137)<br>
-- [76、最小覆盖子串（HashMap+滑动窗口——困难）](https://blog.csdn.net/Revendell/article/details/105615240)<br>
+- [76、最小覆盖子串（哈希表+滑动窗口——困难）](https://blog.csdn.net/Revendell/article/details/105615240)<br>
 - [77、组合（字典序 (二进制排序) 组合、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105617426)<br>
 - [78、子集（字典排序（二进制排序）子集、递归回溯法）](https://blog.csdn.net/Revendell/article/details/105635812)<br>
 - [79、单词搜索（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105638148)<br>
@@ -128,17 +128,17 @@
 - [125、验证回文串（递归、迭代）](https://blog.csdn.net/Revendell/article/details/106019695)<br>
 - [126、单词接龙 II（深度优先搜索+广度优先搜索、广度优先搜索——困难）](https://blog.csdn.net/Revendell/article/details/106097232)<br>
 - [127、单词接龙（广度优先搜索、双向广度优先搜索）](https://blog.csdn.net/Revendell/article/details/106118201)<br>
-- [128、最长连续序列（HashMap）](https://blog.csdn.net/Revendell/article/details/106121810)<br>
+- [128、最长连续序列（哈希表）](https://blog.csdn.net/Revendell/article/details/106121810)<br>
 - [129、求根到叶子节点数字之和（递归）](https://blog.csdn.net/Revendell/article/details/106124443)<br>
 - [130、被围绕的区域（深度优先搜索）](https://blog.csdn.net/Revendell/article/details/106149963)<br>
 - [131、分割回文串（递归回溯法、递归分治法）](https://blog.csdn.net/Revendell/article/details/106153289)<br>
 - [132、分割回文串 II（动态规划+中心扩展）](https://blog.csdn.net/Revendell/article/details/106160823)<br>
-- [133、克隆图（递归深度优先搜索+HashMap）](https://blog.csdn.net/Revendell/article/details/106163439)<br>
+- [133、克隆图（递归深度优先搜索+哈希表）](https://blog.csdn.net/Revendell/article/details/106163439)<br>
 - [134、加油站（贪心法一次遍历）](https://blog.csdn.net/Revendell/article/details/106175481)<br>
 - [135、分发糖果（单调递减栈、贪心）](https://blog.csdn.net/Revendell/article/details/106183226)<br>
 - [136、只出现一次的数字（位运算）](https://blog.csdn.net/Revendell/article/details/106192773)<br>
 - [137、只出现一次的数字 II（位运算——困难）](https://blog.csdn.net/Revendell/article/details/106195797)<br>
-- [138、复制带随机指针的链表（递归+HashMap）](https://blog.csdn.net/Revendell/article/details/106214547)<br>
+- [138、复制带随机指针的链表（递归+哈希表）](https://blog.csdn.net/Revendell/article/details/106214547)<br>
 - [139、单词拆分（动态规划+set）](https://blog.csdn.net/Revendell/article/details/106218179)<br>
 - [140、单词拆分 II（动态规划+递归回溯）](https://blog.csdn.net/Revendell/article/details/106239336)<br>
 - [141、环形链表（哈希表、快慢双指针）](https://blog.csdn.net/Revendell/article/details/106240870)<br>
@@ -146,21 +146,21 @@
 - [143、重排链表（栈、链表逆序）](https://blog.csdn.net/Revendell/article/details/106260961)<br>
 - [144、二叉树的前序遍历（迭代、递归）](https://blog.csdn.net/Revendell/article/details/106279270)<br>
 - [145、二叉树的后序遍历（迭代、递归）](https://blog.csdn.net/Revendell/article/details/106282318)<br>
-- [146、LRU缓存机制（HashMap+list）](https://blog.csdn.net/Revendell/article/details/106301022)<br>
+- [146、LRU缓存机制（哈希表+list）](https://blog.csdn.net/Revendell/article/details/106301022)<br>
 - [147、对链表进行插入排序（单链表操作）](https://blog.csdn.net/Revendell/article/details/106305165)<br>
 - [148、排序链表（归并排序）](https://blog.csdn.net/Revendell/article/details/106322051)<br>
-- [149、直线上最多的点数（HashMap+暴力）](https://blog.csdn.net/Revendell/article/details/106319643)<br>
+- [149、直线上最多的点数（哈希表+暴力）](https://blog.csdn.net/Revendell/article/details/106319643)<br>
 - [150、逆波兰表达式求值（栈）](https://blog.csdn.net/Revendell/article/details/106333213)<br>
 - [151、翻转字符串里的单词（暴力、istringstream）](https://blog.csdn.net/Revendell/article/details/106337760)<br>
 - [152、乘积最大子数组（动态规划、贪心）](https://blog.csdn.net/Revendell/article/details/106359206)<br>
 - [153、寻找旋转排序数组中的最小值（二分查找）](https://blog.csdn.net/Revendell/article/details/106360213)<br>
 - [154、寻找旋转排序数组中的最小值 II（二分查找）](https://blog.csdn.net/Revendell/article/details/106360741)<br>
-- [155、最小栈（辅助栈、HashMap）](https://blog.csdn.net/Revendell/article/details/106380114)<br>
+- [155、最小栈（辅助栈、哈希表）](https://blog.csdn.net/Revendell/article/details/106380114)<br>
 - [160、相交链表（双指针法）](https://blog.csdn.net/Revendell/article/details/106386172)<br>
 - [162、寻找峰值（二分查找）](https://blog.csdn.net/Revendell/article/details/106403729)<br>
 - [164、最大间距（桶排序+鸽笼原理）](https://blog.csdn.net/Revendell/article/details/106410662)<br>
 - [165、比较版本号（istrigstream、双指针、额外O(n)空间）](https://blog.csdn.net/Revendell/article/details/106429006)<br>
-- [166、分数到小数（HashMap）](https://blog.csdn.net/Revendell/article/details/106441918)<br>
+- [166、分数到小数（哈希表）](https://blog.csdn.net/Revendell/article/details/106441918)<br>
 - [167、两数之和 II - 输入有序数组（双指针）](https://blog.csdn.net/Revendell/article/details/106442337)<br>
 - [168、Excel表列名称（数学）](https://blog.csdn.net/Revendell/article/details/106445011)<br>
 - [169、多数元素（摩尔投票法、哈希表）](https://blog.csdn.net/Revendell/article/details/106455098)<br>
@@ -181,7 +181,7 @@
 - [202、快乐数（快慢指针、哈希表）](https://blog.csdn.net/Revendell/article/details/106602639)<br>
 - [203、移除链表元素（单链表基本操作）](https://blog.csdn.net/Revendell/article/details/106603328)<br>
 - [204、计数质数（数学、埃拉托斯特尼筛法）](https://blog.csdn.net/Revendell/article/details/106606037)<br>
-- [205、同构字符串（HashMap）](https://blog.csdn.net/Revendell/article/details/106616625)<br>
+- [205、同构字符串（哈希表）](https://blog.csdn.net/Revendell/article/details/106616625)<br>
 - [206、反转链表（单链表基本操作：迭代、递归）](https://blog.csdn.net/Revendell/article/details/106620033)<br>
 - [207、课程表（拓扑排序广度优先搜索、深度优先搜索——困难）](https://blog.csdn.net/Revendell/article/details/106640378)<br>
 - [208、实现 Trie (前缀树)（字典树）](https://blog.csdn.net/Revendell/article/details/106648843)<br>
@@ -195,7 +195,7 @@
 - [216、组合总和 III（深度优先搜索递归回溯）](https://blog.csdn.net/Revendell/article/details/106768875)<br>
 - [217、存在重复元素（哈希表）](https://blog.csdn.net/Revendell/article/details/106785154)<br>
 - [218、天际线问题（扫描线算法：建立合适的数据结构哈希表——困难）](https://blog.csdn.net/Revendell/article/details/106789932)<br>
-- [219、存在重复元素 II（HashMap、哈希表+滑动窗口）](https://blog.csdn.net/Revendell/article/details/106805331)<br>
+- [219、存在重复元素 II（哈希表+滑动窗口）](https://blog.csdn.net/Revendell/article/details/106805331)<br>
 - [220、存在重复元素 III（滑动窗口+哈希表）](https://blog.csdn.net/Revendell/article/details/106812190)<br>
 - [221、最大正方形（动态规划、广度优先搜索）](https://blog.csdn.net/Revendell/article/details/106837539)<br>
 - [222、完全二叉树的节点个数（递归、层次遍历）](https://blog.csdn.net/Revendell/article/details/106840357)<br>
@@ -212,7 +212,7 @@
 - [233、数字 1 的个数（数学）](https://blog.csdn.net/Revendell/article/details/107747202)<br>
 - [234、回文链表（单链表基本操作）](https://blog.csdn.net/Revendell/article/details/107204562)<br>
 - [235、二叉搜索树的最近公共祖先（迭代、递归）](https://blog.csdn.net/Revendell/article/details/107158624)<br>
-- [236、二叉树的最近公共祖先（递归+HashMap存储父节点）](https://blog.csdn.net/Revendell/article/details/107747331)<br>
+- [236、二叉树的最近公共祖先（递归+哈希表存储父节点）](https://blog.csdn.net/Revendell/article/details/107747331)<br>
 - [237、删除链表中的节点（单链表基本操作）](https://blog.csdn.net/Revendell/article/details/107179519)<br>
 - [238、除自身以外数组的乘积（左右乘积列表）](https://blog.csdn.net/Revendell/article/details/107183184)<br>
 - [239、滑动窗口最大值（辅助队列）](https://blog.csdn.net/Revendell/article/details/107204420)<br>
@@ -276,7 +276,7 @@
 - [345、反转字符串中的元音字母（双指针reverse）](https://blog.csdn.net/Revendell/article/details/113342620)<br>
 - [347、前 K 个高频元素（哈希表、堆排序、桶排序）](https://blog.csdn.net/Revendell/article/details/112134943)<br>
 - [349、两个数组的交集（双指针）](https://blog.csdn.net/Revendell/article/details/113351236)<br>
-- [350、两个数组的交集 II（双指针、哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113353555)<br>
+- [350、两个数组的交集 II（双指针、哈希表）](https://blog.csdn.net/Revendell/article/details/113353555)<br>
 - [352、将数据流变为多个不相交区间（set集合）](https://blog.csdn.net/Revendell/article/details/113700764)<br>
 - [354、俄罗斯套娃信封问题（最长递增子序列问题：动态规划+二分查找——困难）](https://blog.csdn.net/Revendell/article/details/113742502)<br>
 - [357、计算各个位数不同的数字个数（排列组合）](https://blog.csdn.net/Revendell/article/details/113726431)<br>
@@ -291,10 +291,10 @@
 - [376、摆动序列（动态规划）](https://blog.csdn.net/Revendell/article/details/114190262)<br>
 - [378、有序矩阵中第 K 小的元素（归并+小顶堆）](https://blog.csdn.net/Revendell/article/details/114140690)<br>
 - [380、常数时间插入、删除和获取随机元素（哈希表）](https://blog.csdn.net/Revendell/article/details/114142767)<br>
-- [383、赎金信（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113359824)<br>
+- [383、赎金信（哈希表）](https://blog.csdn.net/Revendell/article/details/113359824)<br>
 - [384、打乱数组（洗牌算法）](https://blog.csdn.net/Revendell/article/details/114153427)<br>
-- [387、字符串中的第一个唯一字符（哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/113383194)<br>
-- [389、找不同（哈希表HashMap、位运算、数学）](https://blog.csdn.net/Revendell/article/details/113384111)<br>
+- [387、字符串中的第一个唯一字符（哈希表）](https://blog.csdn.net/Revendell/article/details/113383194)<br>
+- [389、找不同（哈希表、位运算、数学）](https://blog.csdn.net/Revendell/article/details/113384111)<br>
 - [392、判断子序列（双指针）](https://blog.csdn.net/Revendell/article/details/113386235)<br>
 - [394、字符串解码（栈）](https://blog.csdn.net/Revendell/article/details/112177982)<br>
 - [395、至少有K个重复字符的最长子串（分治法）](https://blog.csdn.net/Revendell/article/details/114165492)<br>
@@ -303,14 +303,14 @@
 - [412、Fizz Buzz（数字和字符串相互转化）](https://blog.csdn.net/Revendell/article/details/114168200)<br>
 - [416、分割等和子集（动态规划，01背包问题）](https://blog.csdn.net/Revendell/article/details/112392931)<br>
 - [437、路径总和 III（双重递归）](https://blog.csdn.net/Revendell/article/details/112310755)<br>
-- [438、找到字符串中所有字母异位词（滑动窗口+哈希表HashMap）](https://blog.csdn.net/Revendell/article/details/112428089)<br>
-- [448、找到所有数组中消失的数字（哈希表HashMap，利用数组的下标作为哈希表的映射）](https://blog.csdn.net/Revendell/article/details/112374026)<br>
+- [438、找到字符串中所有字母异位词（滑动窗口+哈希表）](https://blog.csdn.net/Revendell/article/details/112428089)<br>
+- [448、找到所有数组中消失的数字（哈希表，利用数组的下标作为哈希表的映射）](https://blog.csdn.net/Revendell/article/details/112374026)<br>
 - [454、四数相加 II（哈希表，空间换时间）](https://blog.csdn.net/Revendell/article/details/114175110)<br>
 - [461、汉明距离（位运算）](https://blog.csdn.net/Revendell/article/details/112372769)<br>
 - [494、目标和（动态规划，01背包）](https://blog.csdn.net/Revendell/article/details/113136809)<br>
 - [538、把二叉搜索树转换为累加树（递归）](https://blog.csdn.net/Revendell/article/details/112368465)<br>
 - [543、二叉树的直径（递归dfs深度优先搜索+备忘录、树的高度）](https://blog.csdn.net/Revendell/article/details/112273099)<br>
-- [560、和为K的子数组（前缀和+哈希表HashMap——困难）](https://blog.csdn.net/Revendell/article/details/113186718)<br>
+- [560、和为K的子数组（前缀和+哈希表——困难）](https://blog.csdn.net/Revendell/article/details/113186718)<br>
 - [581、最短无序连续子数组（两次循环遍历、单调栈）](https://blog.csdn.net/Revendell/article/details/113181100)<br>
 - [617、合并二叉树（递归——经典）](https://blog.csdn.net/Revendell/article/details/112305416)<br>
 - [621、任务调度器（贪心算法）](https://blog.csdn.net/Revendell/article/details/113196195)<br>
