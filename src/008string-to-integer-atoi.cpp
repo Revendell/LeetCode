@@ -4,6 +4,28 @@
 using namespace std;
 class Solution {
 public:
+    int myAtoi(string s) {
+		//简化版：四步走，忽略前导空格、确定正负号、检查输入是否合法、检查是否溢出
+        int sign = 1, i = 0;
+		long  num = 0;
+        while(s[i] == ' ')    //1.忽略前导空格
+			i++;    
+        if(s[i] == '+' || s[i] == '-')    //2.确定正负号
+		{
+			sign=s[i]=='+'?1:-1;
+			i++;
+		}
+        while(isdigit(s[i]))   //3.检查输入是否合法
+        {
+            num = num * 10 + (s[i++] - '0');
+            if((sign==1&&num>=INT_MAX) || (sign==-1&&num-1>=INT_MAX))    //4.是否溢出
+                return sign == 1 ? INT_MAX : INT_MIN;
+        }
+        return num * sign;
+    }
+};
+class Solution1 {
+public:
 	int myAtoi(string str) {
 		int number[1000];
 		int i, j = 0, flag, len;  //len为字符串str的长度，flag用来标记整数是否有符号flag=1(转换从下标1开始)整数前面有-或+，j用来标记整数的位数
