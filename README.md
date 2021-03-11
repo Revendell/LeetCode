@@ -34,7 +34,7 @@
 - [31、下一个排列（next_permutation算法）](https://blog.csdn.net/Revendell/article/details/105001888)<br>
 - [32、最长有效括号（栈）](https://blog.csdn.net/Revendell/article/details/105011706)<br>
 - [33、搜索旋转排序数组（二分查找）](https://blog.csdn.net/Revendell/article/details/105028452)<br>
-- [34、在排序数组中查找元素的第一个和最后一个位置（二分查找）](https://blog.csdn.net/Revendell/article/details/105049053)<br>
+- [34、在排序数组中查找元素的第一个和最后一个位置（二分查找，lower_bound，upper_bound）](https://blog.csdn.net/Revendell/article/details/105049053)<br>
 - [35、搜索插入位置（二分查找）](https://blog.csdn.net/Revendell/article/details/103958788)<br>
 - [36、有效的数独（暴力法、哈希表）](https://blog.csdn.net/Revendell/article/details/105074042)<br>
 - [37、解数独（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105102064)<br>
