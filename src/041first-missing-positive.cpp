@@ -5,6 +5,30 @@ using namespace std;
 class Solution {
 public:
 	int firstMissingPositive(vector<int>& nums) {
+		//简化版：索引作为哈希表
+		int n=nums.size();
+		for(auto& num:nums)
+		{
+			if(num<=0)
+				num=n+1;
+		}
+		for(auto num:nums)
+		{
+			int tmp=abs(num);
+			if(tmp<=n)
+				nums[tmp-1]=-abs(nums[tmp-1]);
+		}
+		for(int i=0;i<nums.size();i++)
+		{
+			if(nums[i]>0)
+				return i+1;
+		}
+		return n+1;
+	}
+};
+class Solution1 {
+public:
+	int firstMissingPositive(vector<int>& nums) {
 		int i, flag, temp;
 		flag = 0;
 		//考这种是否出现的问题，很直观的想到哈希表，使用一个标记，记录是否出现，当然也可以直接使用集合，来判断是否出现
