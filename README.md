@@ -31,7 +31,7 @@
 - [28、实现strStr()（KMP算法、字符串匹配）](https://blog.csdn.net/Revendell/article/details/103563947)<br>
 - [29、两数相除（增倍除数法）](https://blog.csdn.net/Revendell/article/details/103579888)<br>
 - [30、串联所有单词的子串（哈希表）](https://blog.csdn.net/Revendell/article/details/104981146)<br>
-- [31、下一个排列（数组中数字的排序）](https://blog.csdn.net/Revendell/article/details/105001888)<br>
+- [31、下一个排列（next_permutation算法）](https://blog.csdn.net/Revendell/article/details/105001888)<br>
 - [32、最长有效括号（栈）](https://blog.csdn.net/Revendell/article/details/105011706)<br>
 - [33、搜索旋转排序数组（二分查找）](https://blog.csdn.net/Revendell/article/details/105028452)<br>
 - [34、在排序数组中查找元素的第一个和最后一个位置（二分查找）](https://blog.csdn.net/Revendell/article/details/105049053)<br>
