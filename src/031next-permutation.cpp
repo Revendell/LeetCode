@@ -2,8 +2,35 @@
 #include<vector>
 #include<math.h>
 using namespace std;
-class Solution
-{
+class Solution{
+public:
+	void nextPermutation(vector<int>& nums) {
+		//简化版：STL中的next_permutation算法
+		//从最尾端开始往前寻找相邻的两个元素*i和*ii满足*i<*ii，找到这样一组相邻元素后，
+		//再从尾端开始往前检验，找出第一个大于*i的元素*j，交换i和j的值，再将ii之后的所有元素颠倒排序，即可
+		int n=nums.size();
+		int i,ii,j;
+		for(int k=n-1;k>0;k--)
+		{
+			if(nums[k-1]<nums[k])
+			{
+				i=k-1,ii=k;
+                break;
+			}
+		}
+		for(int k=n-1;k>i;k--)
+		{
+			if(nums[k]>nums[i])
+			{
+				swap(nums[k],nums[i]);
+				break;
+			}
+		}
+		reverse(nums.begin()+ii,nums.end());
+		return;
+	}
+};
+class Solution1{
 public:
 	//把数组连成一个数，得到的结果应该是跟这个数最近且比他大的数，如果这个数已经最大，就返回组合的最小数
 	void nextPermutation(vector<int>& nums) {
