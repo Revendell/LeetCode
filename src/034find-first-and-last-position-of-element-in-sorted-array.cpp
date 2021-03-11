@@ -4,6 +4,38 @@ using namespace std;
 class Solution {
 public:
 	vector<int> searchRange(vector<int>& nums, int target) {
+		//ºÚªØ∞Ê£∫lower_bound∫Õupper_boundÀ„∑®
+		vector<int> res{-1,-1};
+		if(nums.empty())  return res;
+		int low=0, mid, high=nums.size()-1;
+		while(low<high)
+		{
+			mid=(low+high)/2;
+			if(nums[mid]<target)
+				low=mid+1;
+			else
+				high=mid;
+		}
+		if(nums[low]==target)
+			res[0]=low;
+		else
+			return res;
+		low=0,high=nums.size();
+		while(low<high)
+		{
+			mid=(low+high)/2;
+			if(nums[mid]<=target)
+				low=mid+1;
+			else
+				high=mid;
+		}
+		res[1]=low-1;
+		return res;
+	}
+};
+class Solution1 {
+public:
+	vector<int> searchRange(vector<int>& nums, int target) {
 		vector<int> res;
 		int low, mid, high, pos1, pos2;
 		low = 0;
