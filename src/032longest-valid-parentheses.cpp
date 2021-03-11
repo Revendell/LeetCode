@@ -1,7 +1,38 @@
 #include<iostream>
 #include<vector>
+#include<stack>
 using namespace std;
 class Solution {
+public:
+	int longestValidParentheses(string s) {
+		//简化版本：栈，栈顶元素为没有匹配的右括号下标或者没有匹配的左括号下标作为分割点，一开始-1入栈为没有匹配的右括号下标
+		//遇到(就入栈，遇到)就出栈，如果栈为空说明匹配失败，将没有匹配的右括号下标入栈；
+		//如果栈不为空说明匹配成功，当前下标i与栈顶分割点相减就是最长有效括号的长度
+
+		//对于遇到的每个(，我们将它的下标放入栈中
+		//对于遇到的每个)，我们先弹出栈顶元素表示匹配了当前右括号：
+		//如果栈为空，说明当前的右括号为没有被匹配的右括号，我们将其下标放入栈中来更新我们之前提到的「最后一个没有被匹配的右括号的下标」
+		//如果栈不为空，当前右括号的下标减去栈顶元素即为「以该右括号为结尾的最长有效括号的长度」
+		int res=0;
+		stack<int> st;
+		st.push(-1);
+		for(int i=0;i<s.size();i++)
+		{
+			if(s[i]=='(')
+				st.push(i);
+			else
+			{
+				st.pop();
+				if(st.empty())
+					st.push(i);
+				else
+					res=max(res,i-st.top());
+			}
+		}
+		return res;
+	}
+};
+class Solution1 {
 public:
 	int longestValidParentheses(string s) {
 		//基本思想：两头循环的方法，避免了一次循环解决不了的各种特殊情况，两头循环取最大长度。对于(()和()(()的情况
