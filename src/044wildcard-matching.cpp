@@ -4,6 +4,32 @@ using namespace std;
 class Solution {
 public:
 	bool isMatch(string s, string p) {
+		//简化版：动态规划
+		vector<vector<bool>> dp(s.size()+1,vector<bool>(p.size()+1,false));
+		dp[0][0]=true;
+		for(int i=1;i<=p.size();i++)
+		{
+			if(p[i-1]=='*')
+				dp[0][i]=true;
+			else
+				break;
+		}
+		for(int i=1;i<=s.size();i++)
+		{
+			for(int j=1;j<=p.size();j++)
+			{
+				if(p[j-1]=='?'||s[i-1]==p[j-1])
+					dp[i][j]=dp[i-1][j-1];
+				else if(p[j-1]=='*')
+					dp[i][j]=dp[i][j-1]||dp[i-1][j];
+			}
+		}
+		return dp[s.size()][p.size()];
+	}
+};
+class Solution1 {
+public:
+	bool isMatch(string s, string p) {
 		//基本思想：递归法，尽管有优化还是超时，但这是一种思想记录一下
 		string p1;
 		int i = 0;
@@ -80,7 +106,7 @@ public:
 		return false;
 	}
 };
-class Solution1 {
+class Solution2 {
 public:
 	bool isMatch(string s, string p) {
 		//基本思想：动态规划法，所有字符串匹配问题都可以用动态规划法，利用已匹配的信息计算未匹配的信息。
@@ -125,7 +151,7 @@ public:
 
 	}
 };
-class Solution2 {
+class Solution3 {
 public:
 	bool isMatch(string s, string p) {
 		//基本思想：贪心回溯法
