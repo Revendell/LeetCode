@@ -39,19 +39,15 @@ public:
 		for (i = 0; i <= heights.size(); i++)
 		{
 			//当前heights[i]元素小于栈顶元素或者当前下标已经到底了，计算以栈顶元素为矩形的高情况下矩形最大面积
-			while (!st.empty() && i == heights.size() || !st.empty() && heights[i] < heights[st.top()])
+			while (!st.empty() && (i == heights.size() || heights[i] < heights[st.top()]))
 			{
 				cur = st.top();
 				st.pop();
 				//寻找左边界
-				if (!st.empty())
-					left = st.top();
-				else
-					left = -1;
+				left=!st.empty()?st.top():-1;
 				res = max(res, (i - left - 1) * heights[cur]);
 			}
-			if (i < heights.size())
-				st.push(i);
+			st.push(i);
 		}
 		return res;
 	}
