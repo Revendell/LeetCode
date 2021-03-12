@@ -41,26 +41,18 @@ class Solution1 {
 public:
 	vector<vector<int>> res;
 	vector<vector<int>> subsets(vector<int>& nums) {
-		//基本思想：递归回溯法，子集中元素个数subset_len从0到nums.size，循环遍历递归回溯
+		//基本思想：递归回溯法
 		vector<int> cur;
-		int cnt = 0, subset_len, pos = 0;
-		for (subset_len = 0; subset_len <= nums.size(); subset_len++)
-		{
-			Recursion(nums, pos, cnt, subset_len, cur);
-		}
+		Recursion(nums, 0, cur);
 		return res;
 	}
-	void Recursion(vector<int>& nums, int pos, int cnt, int subset_len, vector<int> cur)
+	void Recursion(vector<int>& nums, int pos, vector<int> cur)
 	{
-		if (cnt == subset_len)
-		{
-			res.push_back(cur);
-			return;
-		}
+		res.push_back(cur);
 		for (int i = pos; i < nums.size(); i++)
 		{
 			cur.push_back(nums[i]);
-			Recursion(nums, i + 1, cnt + 1, subset_len, cur);
+			Recursion(nums, i + 1, cur);
 			cur.pop_back();
 		}
 		return;
