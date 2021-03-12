@@ -6,7 +6,7 @@ using namespace std;
 class Solution {
 public:
 	int largestRectangleArea(vector<int>& heights) {
-		//基本思想：单调栈，单调递增栈的作用就是为了以栈顶元素为中心，向两边延伸找到小于栈顶元素的左右边界
+		//基本思想：单调栈，单调递增栈的作用就是为了以栈顶元素为中心，向两边延伸找到小于栈顶元素的左右边界(left,i)，res = max(res, (i - left - 1) * heights[cur])
 		//当前heights[i]元素大于栈顶，则元素入栈，否则开始计算以栈顶元素为矩形的高往两侧延伸
 		//直到遇到左右两侧第一个比这个矩形条的高度更小的矩形条，此时以栈顶元素为矩形的宽度就是该矩形最大宽度
 		//寻找右边界，很明显，就是当前heights[i]元素右边界为i，如果heights[i]大于等于栈顶元素就入栈了
@@ -18,19 +18,15 @@ public:
 		for (i = 0; i <= heights.size(); i++)
 		{
 			//当前heights[i]元素小于栈顶元素或者当前下标已经到底了，计算以栈顶元素为矩形的高情况下矩形最大面积
-			while (!st.empty() && i==heights.size() || !st.empty() && heights[i] < heights[st.top()])
+			while (!st.empty() && (i==heights.size() || heights[i] < heights[st.top()]))
 			{
 				cur = st.top();
 				st.pop();
 				//寻找左边界
-				if (!st.empty())
-					left = st.top();
-				else
-					left = -1;
+				left=!st.empty()?st.top():-1;
 				res = max(res, (i - left - 1) * heights[cur]);
 			}
-			if(i<heights.size())
-			    st.push(i);
+			st.push(i);
 		}
 		return res;
 	}
