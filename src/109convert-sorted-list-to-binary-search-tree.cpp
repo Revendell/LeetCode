@@ -41,6 +41,35 @@ void PreOrderTraverse(TreeNode* T)
 }
 class Solution {
 public:
+    TreeNode* sortedListToBST(ListNode* head) {
+		//简化版：递归，以中间值将链表分割成两部分，左半部分为root的左子树，右半部分为root的右子树
+        TreeNode* root=nullptr;
+        ListNode* start=new ListNode(0,head);
+        Recursion(start,root);
+        return root;
+    }
+    void Recursion(ListNode* start,TreeNode* &root)
+    {
+        if(start->next==nullptr)
+            return;
+        ListNode* p=start->next;
+        int len=0;
+        while(p)
+        {
+            len++;
+            p=p->next;
+        }
+        p=start;
+        for(int i=0;i<len/2;i++)
+            p=p->next;
+        root=new TreeNode(p->next->val);
+        Recursion(p->next,root->right);
+        p->next=nullptr;
+        Recursion(start,root->left);
+    }
+};
+class Solution1 {
+public:
 	TreeNode* sortedListToBST(ListNode* head) {
 		//基本思想：递归，找到链表中间节点p，以p->next节点为根节点，分成左右子树，不断递归此过程
 		if (head == NULL)
