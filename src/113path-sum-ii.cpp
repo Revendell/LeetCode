@@ -25,6 +25,32 @@ void Init_TreeNode(TreeNode** T, vector<int>& vec, int& pos)
 class Solution {
 public:
 	vector<vector<int>> res;
+	vector<vector<int>> pathSum(TreeNode* root, int sum) {
+		//简化版：递归回溯
+		vector<int> cur;
+		Recursion(root, sum, cur);
+		return res;
+	}
+	void Recursion(TreeNode* root, int sum, vector<int> cur)
+	{
+		if(root == NULL)
+			return;
+		cur.push_back(root->val);
+		//终止条件：root为叶子节点
+		if (root->right == NULL && root->left == NULL)
+		{
+			//如果之前节点值和+当前节点值=sum，保存该路径所有节点cur到res
+			if (sum == root->val)
+				res.push_back(cur);
+			return;
+		}
+		Recursion(root->left, sum - root->val,cur);
+		Recursion(root->right, sum - root->val,cur);
+	}
+};
+class Solution1 {
+public:
+	vector<vector<int>> res;
 	vector<int> cur;
 	vector<vector<int>> pathSum(TreeNode* root, int sum) {
 		//基本思想：递归回溯，递归遍历所有二叉树路径是否有一条路径和等于sum，保存该路径下所有节点值到cur
