@@ -29,6 +29,33 @@ void Init_ListNode(ListNode* head, vector<int> vec)
 class Solution {
 public:
 	ListNode* reverseBetween(ListNode* head, int m, int n) {
+		//简化版：头插法，对[m,n]进行逆序，p指向m-1，q指向n+1，cur指向当前节点，nextv指向cur的下一个节点，finish指向逆序后的最后一个节点
+		ListNode* start=new ListNode(0);
+		start->next=head;
+		ListNode* p=start, * q=head, * cur, * nextv,*finish;
+		while(--m)
+			p=p->next;
+		while(n--)
+			q=q->next;
+		cur=p->next;
+		finish=cur;
+		nextv=cur->next;
+		p->next=nullptr;
+		while(cur!=q)
+		{
+			cur->next=p->next;
+			p->next=cur;
+			cur=nextv;
+			if(cur!=nullptr)
+				nextv=cur->next;
+		}
+		finish->next=q;
+		return start->next;
+	}
+};
+class Solution1 {
+public:
+	ListNode* reverseBetween(ListNode* head, int m, int n) {
 		//基本思想：单链表操作，cur从p到q遍历所有需要反转的节点，具体做法是不断将cur放到q后面，最后pre指向q
 		if (head == NULL)
 			return NULL;
