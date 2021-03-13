@@ -99,7 +99,7 @@
 - [96、不同的二叉搜索树（卡特兰数公式）](https://blog.csdn.net/Revendell/article/details/105844563)<br>
 - [97、交错字符串（二维动态规划法——困难）](https://blog.csdn.net/Revendell/article/details/105862659)<br>
 - [98、验证二叉搜索树（中序遍历、递归法）](https://blog.csdn.net/Revendell/article/details/105865066)<br>
-- [99、恢复二叉搜索树（中序遍历+双指针找逆序对+递归遍历）](https://blog.csdn.net/Revendell/article/details/105878405)<br>
+- [99、恢复二叉搜索树（中序遍历+逆序对+递归遍历）](https://blog.csdn.net/Revendell/article/details/105878405)<br>
 - [100、相同的树（递归、迭代）](https://blog.csdn.net/Revendell/article/details/105879349)<br>
 - [101、对称二叉树（递归、迭代）](https://blog.csdn.net/Revendell/article/details/105889156)<br>
 - [102、二叉树的层序遍历（队列）](https://blog.csdn.net/Revendell/article/details/105889963)<br>
