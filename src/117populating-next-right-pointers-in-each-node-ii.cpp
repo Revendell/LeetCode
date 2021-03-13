@@ -1,6 +1,7 @@
 #include<iostream>
 #include<vector>
 #include<algorithm>
+#include<deque>
 using namespace std;
 class Node {
 public:
@@ -36,6 +37,75 @@ void PreOrderTraverse(Node* T)
 	PreOrderTraverse(T->right);
 }
 class Solution {
+public:
+	Node* connect(Node* root) {
+		//简化版：队列，层次遍历所有节点并串联
+		if(root==nullptr)
+			return root;
+		deque<Node*> queue;
+		queue.push_front(root);
+		while (!queue.empty())
+		{
+			int len=queue.size();
+			Node* p,*q;
+			for(int i=0;i<len;i++)
+			{
+				p=queue.back();
+				queue.pop_back();
+				if(p->left)
+					queue.push_front(p->left);
+				if(p->right)
+					queue.push_front(p->right);
+				if(i!=0)
+					q->next=p;
+				q=p;	
+			}
+		}
+		return root;
+	}
+};
+class Solution1 {
+public:
+	Node* connect(Node* root) {
+		//简化版：利用next完成队列的层次遍历功能，nextlayer是下一层的起始节点，prev是当前层串联起来的前一个节点
+		Node* p=root;
+		while (p)
+		{
+			Node* prev=nullptr,*nextlayer=nullptr;
+			while(p)
+			{
+				if(p->left)
+				{
+					if(prev)
+					{
+						prev->next=p->left;
+						prev=p->left;
+					}
+					else
+						prev=p->left;
+					if(nextlayer==nullptr)
+						nextlayer=p->left;
+				}
+				if(p->right)
+				{
+					if(prev)
+					{
+						prev->next=p->right;
+						prev=p->right;
+					}
+					else
+						prev=p->right;
+					if(nextlayer==nullptr)
+						nextlayer=p->right;
+				}
+				p=p->next;
+			}
+			p=nextlayer;
+		}
+		return root;
+	}
+};
+class Solution2 {
 public:
 	Node* connect(Node* root) {
 		//基本思想：迭代，利用next指针遍历每一层的所有节点
