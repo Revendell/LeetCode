@@ -37,6 +37,50 @@ void PreOrderTraverse(TreeNode* T)
 }
 class Solution {
 public:
+    void recoverTree(TreeNode* root) {
+		//简化版：中序遍历+逆序对+递归
+        vector<int> nums;
+        stack<TreeNode*> st;
+        TreeNode* p=root;
+        while(!st.empty()||p)
+        {
+            while(p)
+            {
+                st.push(p);
+                p=p->left;
+            }
+            p=st.top();
+            nums.push_back(p->val);
+            st.pop();
+            p=p->right;
+        }
+        int low=0,high=nums.size()-1;
+        while(low<nums.size())
+        {
+            if(nums[low]>nums[low+1])
+                break;
+            low++;
+        }
+        while(high>=0)
+        {
+            if(nums[high]<nums[high-1])
+                break;
+            high--;
+        }
+        Recursion(root,nums[low],nums[high]);
+    }
+    void Recursion(TreeNode* root,int num1,int num2)
+    {
+        if(root==nullptr)
+            return;
+        if(root->val==num1||root->val==num2)
+            root->val=root->val==num1?num2:num1;
+        Recursion(root->left,num1,num2);
+        Recursion(root->right,num1,num2);
+    }
+};
+class Solution1 {
+public:
 	void recoverTree(TreeNode* root) {
 		//基本思想：先基于栈的中序遍历二叉树，得到中序遍历序列middleOrder
 		//然后基于双指针在middleOrder序列中找逆序对swap1和swap2
