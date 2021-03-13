@@ -20,6 +20,29 @@ void PreOrderTraverse(TreeNode* T)
 }
 class Solution {
 public:
+    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
+		//简化版：递归，通过中序遍历序列找到根节点将中序遍历序列分割成左右子树，继续递归
+        TreeNode* root=nullptr;
+        Recursion(preorder,inorder,root);
+        return root;
+    }
+    void Recursion(vector<int> preorder, vector<int> inorder,TreeNode* &root)
+    {
+        if(preorder.size()==0)
+            return;
+        int i;
+        for(i=0;i<inorder.size();i++)
+        {
+            if(preorder[0]==inorder[i])
+                break;
+        }
+        root=new TreeNode(preorder[0]);
+        Recursion(vector<int>(preorder.begin()+1,preorder.begin()+1+i),vector<int>(inorder.begin(),inorder.begin()+i),root->left);
+        Recursion(vector<int>(preorder.begin()+1+i,preorder.end()),vector<int>(inorder.begin()+i+1,inorder.end()),root->right);
+    }
+};
+class Solution1 {
+public:
 	TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {
 		//基本思想：递归，不断以根节点拆分出左子树的前序中序和右子树的前序中序，继续递归，直至生成整棵树
 		//左子树的前序中序为preorder_left、inorder_left
