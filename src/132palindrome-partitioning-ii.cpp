@@ -5,6 +5,35 @@
 using namespace std;
 class Solution {
 public:
+	int minCut(string s) {
+		//基本思想：动态规划，dp[i]表示前i个字符分割的最小次数
+		vector<int> dp(s.size()+1,0);
+		for (int i = 0; i <= s.size(); i++)
+			dp[i]=i-1;
+		for(int i=0;i<s.size();i++)
+		{
+			for(int j=0;j<=i;j++)
+			{
+				if(check(s,j,i))
+					dp[i+1]=min(dp[i+1],dp[j]+1);
+			}
+		}
+		return dp[s.size()];
+	}
+	bool check(string &s,int left,int right)
+	{
+		while(left<right)
+		{
+			if(s[left]!=s[right])
+				return false;
+			left++;
+			right--;
+		}
+		return true;
+	}
+};
+class Solution1 {
+public:
 	vector<int> dp;
 	int minCut(string s) {
 		//基本思想：动态规划+中心扩展，定义dp[i]表示将s[0:i]分割成回文子串的最小分割次数
