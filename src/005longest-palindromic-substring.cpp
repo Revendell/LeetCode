@@ -7,23 +7,13 @@ public:
 	string longestPalindrome(string s) {
 		//简化版：动态规划+中心扩展法，dp[i][j]表示s中[i,j]范围字符是否构成回文串
 		int start, max_len = 0;
-		vector<vector<bool>> dp(s.size(),vector<bool>(s.size(),false));
-		for(int i=0;i<s.size();i++)
-		{
-			dp[i][i]=true;
-			if(i+1<s.size()&&s[i]==s[i+1])
-			{
-				dp[i][i+1]=true;
-				start=i;
-				max_len=2;
-			}	
-		}
-		for(int len=3;len<=s.size();len++)
+		vector<vector<bool>> dp(s.size(),vector<bool>(s.size(),false));	
+		for(int len=1;len<=s.size();len++)
 		{
 			for(int i=0;i<=s.size()-len;i++)
 			{
 				int j=i+len-1;
-				if(s[i]==s[j]&&dp[i+1][j-1])
+				if(s[i]==s[j]&&(i==j||i+1==j||dp[i+1][j-1]))
 				{
 					dp[i][j]=true;
 					start=i;
