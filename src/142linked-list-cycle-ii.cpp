@@ -28,6 +28,30 @@ void Init_ListNode(ListNode* head, vector<int> vec)
 }
 class Solution {
 public:
+    ListNode *detectCycle(ListNode *head) {
+		//简化版
+        if(head==nullptr||head->next==nullptr)
+            return nullptr;
+        ListNode* slow=head,*fast=head->next;
+        while(slow!=fast)
+        {
+            if(fast==nullptr||fast->next==nullptr)
+                return nullptr;
+            slow=slow->next;
+            fast=fast->next->next;
+        }
+        slow=slow->next;
+        fast=head;
+        while(fast!=slow)
+        {
+            slow=slow->next;
+            fast=fast->next;
+        }
+        return slow;
+    }
+};
+class Solution1 {
+public:
 	ListNode* detectCycle(ListNode* head) {
 		//基本思想：哈希表
 		unordered_set<ListNode*> dictNode;
@@ -42,7 +66,7 @@ public:
 		return NULL;
 	}
 };
-class Solution1 {
+class Solution2 {
 public:
 	ListNode* detectCycle(ListNode* head) {
 		//基本思想：快慢双指针，设起始点到入环点距离M，环中距离N
