@@ -62,18 +62,18 @@ public:
 			return head;
 		else
 		{
-			//快慢指针找到链表的中间节点，pre指向中间节点的前一个节点用来断开链表
-			ListNode* fast = head, * slow = head, * pre =head;
+			//快慢指针找到链表的中间节点slow，然后切断成两个链表
+			ListNode* fast = head->next, * slow = head, * head2;
 			while (true)
 			{
 				if (fast == NULL || fast->next == NULL)
 					break;
-				pre = slow;
 				slow = slow->next;
 				fast = fast->next->next;
 			}
-			pre->next = NULL;
-			return Merge(MergeSort(head), MergeSort(slow));
+			head2=slow->next;
+			slow->next = nullptr;
+			return Merge(MergeSort(head), MergeSort(head2));
 		}
 	}
 };
