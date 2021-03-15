@@ -58,21 +58,6 @@ public:
 class Solution1 {
 public:
 	ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
-		//优化的重要性，优化了我原始的想法
-		if (headA == NULL || headB == NULL)
-			return NULL;
-		ListNode* pA = headA, * pB = headB;
-		while (pA != pB)
-		{
-			pA = pA == NULL ? headA : pA->next;
-			pB = pB == NULL ? headB : pB->next;
-		}
-		return pA;
-	}
-};
-class Solution2 {
-public:
-	ListNode* getIntersectionNode(ListNode* headA, ListNode* headB) {
 		//优化的重要性，有许多地方可以优化
 		if (headA == NULL || headB == NULL)
 			return NULL;
