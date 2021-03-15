@@ -29,6 +29,42 @@ void Init_ListNode(ListNode* head, vector<int> vec)
 }
 class Solution {
 public:
+    void reorderList(ListNode* head) {
+		//简化版：第一步，将链表平均分成两半；第二步，将第二个链表逆序；第三步，依次连接两个链表
+        if(head==nullptr||head->next==nullptr)
+            return;
+        ListNode* p=head,*q=head->next;
+        while(true)
+        {
+            if(q==nullptr||q->next==nullptr)
+                break;
+            p=p->next;
+            q=q->next->next;
+        }
+        ListNode* start=new ListNode(0);
+        q=p->next;
+        p->next=nullptr;
+        while(q)
+        {
+            ListNode* tmp=q->next;
+            q->next=start->next;
+            start->next=q;
+            q=tmp;
+        }
+        p=head;
+        q=start->next;
+        while(q)
+        {
+            ListNode* tmp1=p->next,* tmp2=q->next;
+            p->next=q;
+            q->next=tmp1;
+            p=tmp1;
+            q=tmp2;
+        }
+    }
+};
+class Solution1 {
+public:
 	void reorderList(ListNode* head) {
 		//基本思想：栈，利用栈存储需要交换的节点
 		int len = 0;
@@ -68,7 +104,7 @@ public:
 		}
 	}
 };
-class Solution1 {
+class Solution2 {
 public:
 	void reorderList(ListNode* head) {
 		//基本思想：第一步，将链表平均分成两半；第二步，将第二个链表逆序；第三步，依次连接两个链表；
