@@ -37,8 +37,8 @@ public:
 class Solution1 {
 public:
 	int numIslands(vector<vector<char>>& grid) {
-		//基本思想：广度优先搜索，注意点：一遇到1就转为0，这样避免了同一坐标进入队列好几次，重复检查很多遍
-		deque<vector<int>> queue;
+		//基本思想：广度优先搜索
+		deque<pair<int,int>> queue;
 		int res = 0;
 		for (int i = 0; i < grid.size(); i++)
 		{
@@ -48,32 +48,20 @@ public:
 				{
 					res++;
 					queue.push_front({ i,j });
-					grid[i][j] = '0';
 					while (!queue.empty())
 					{
-						vector<int> cur = queue.back();
+						pair<int,int> cur = queue.back();
 						queue.pop_back();
-						int r = cur.front(), c = cur.back();
-						if (r - 1 >= 0 && grid[r - 1][c] == '1')
-						{
-							queue.push_front({ r - 1,c });
-							grid[r - 1][c] = '0';
-						}	
-						if (r + 1 < grid.size() && grid[r + 1][c] == '1')
-						{	
-							queue.push_front({ r + 1,c });
-							grid[r + 1][c] = '0';
-						}
-						if (c - 1 >= 0 && grid[r][c - 1] == '1')
-						{
-							queue.push_front({ r,c - 1 });
-							grid[r][c - 1] = '0';
-						}
-						if (c + 1 < grid[0].size() && grid[r][c + 1] == '1')
-						{
-							queue.push_front({ r,c + 1 });
-							grid[r][c + 1] = '0';
-						}	
+						int r = cur.first, c = cur.second;
+						if(r<0||r>=grid.size()||c<0||c>=grid[0].size())
+							continue;
+						if(grid[r][c] == '0')
+							continue;
+						grid[r][c]='0';
+						queue.push_front({ r - 1,c });
+						queue.push_front({ r + 1,c });
+						queue.push_front({ r,c - 1 });
+						queue.push_front({ r,c + 1 });
 					}
 				}
 			}
