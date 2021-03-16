@@ -5,6 +5,35 @@
 using namespace std;
 class Solution {
 public:
+    int calculate(string s) {
+		//简化版：栈，先入栈后计算，因为*/优先级高于+-，只有知道后一个符号是什么前面的符号才能计算结果
+        istringstream is(s);
+        stack<int> st;
+        int res=0,num;
+        char c,pre_op='+';
+        while(is>>num)
+        {
+            is>>c;
+            if(pre_op=='+')
+                st.push(num);
+            else if(pre_op=='-')
+                st.push(-num);
+            else if(pre_op=='*')
+                st.top()*=num;
+            else if(pre_op=='/')
+                st.top()/=num;
+            pre_op=c;
+        }
+        while(!st.empty())
+        {
+            res+=st.top();
+            st.pop();
+        }
+        return res;
+    }
+};
+class Solution1 {
+public:
 	int calculate(string s) {
 		//基本思想：栈，先计算再入栈的思想，nums保存数字的栈，sigh保存符号的栈
 		//如果遇到数字，先判断前一个符号，如果是加减，则数字入栈，因为后面可能是乘除不能直接计算；如果是乘除，直接计算结果
@@ -71,7 +100,7 @@ public:
 		return nums.top();
 	}
 };
-class Solution1 {
+class Solution2 {
 public:
 	int calculate(string s) {
 		//基本思想：栈，优化，先入栈再计算的思想，这个问题的关键是先乘除后加减，只有知道后一个符号是什么前面的符号才能计算结果
