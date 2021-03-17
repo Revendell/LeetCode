@@ -6,6 +6,60 @@
 using namespace std;
 class Solution {
 public:
+    vector<int> diffWaysToCompute(string expression) {
+		//简化版：递归分治法
+        vector<int> nums;
+		vector<char> flag;
+        vector<int> res;
+		istringstream s(expression);
+		int num;
+		char sign;
+		s >> num;
+		nums.push_back(num);
+		while (s >> sign)
+		{
+			flag.push_back(sign);
+			s >> num;
+			nums.push_back(num);
+		}
+		res=Recursion(nums,flag);
+		return res;
+    }
+    vector<int> Recursion(vector<int> nums,vector<char> flag)
+    {
+        vector<int> res;
+        if(nums.size()==1)
+            return vector<int>{nums[0]};
+        for(int i=0;i<flag.size();i++)
+        {
+            vector<int> nums1(nums.begin(),nums.begin()+i+1);
+            vector<int> nums2(nums.begin()+i+1,nums.end());
+            vector<char> flag1,flag2;
+            if(i>0)
+                flag1.insert(flag1.end(),flag.begin(),flag.begin()+i);
+            if(i<flag.size()-1)
+                flag2.insert(flag2.end(),flag.begin()+i+1,flag.end());
+            vector<int> res1,res2;
+            res1=Recursion(nums1,flag1);
+            res2=Recursion(nums2,flag2);
+            for(auto l:res1)
+            {
+                for(auto r:res2)
+                {
+                    if(flag[i]=='+')
+                        res.push_back(l+r);
+                    else if(flag[i]=='-')
+                        res.push_back(l-r);
+                    else if(flag[i]=='*')
+                        res.push_back(l*r);
+                }
+            }   
+        }
+        return res;
+    }
+};
+class Solution1 {
+public:
 	vector<int> diffWaysToCompute(string input) {
 		//基本思想：递归分治法，该问题牵涉到括号的组合问题，一般使用递归分治法。
 		//解法：碰到运算符号，递归求解前一半的值和后一半的值，然后根据运算符号，计算两者构成的值。
