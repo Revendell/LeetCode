@@ -6,6 +6,31 @@
 using namespace std;
 class Solution {
 public:
+    int numSquares(int n) {
+        //简化版：四平方和定理，牛顿18岁时的定理，组成一个正整数的完全平方数的个数小于等于4
+        int i=sqrt(n);
+        if(i*i==n)
+            return 1;
+        for(i=1;i*i<n;i++)
+        {
+            int j=pow(n-i*i,0.5);
+            if(i*i+j*j==n)
+                return 2;
+        }
+        for(i=1;i*i<n;i++)
+        {
+            for(int j=1;j*j+i*i<n;j++)
+            {
+                int k=pow(n-i*i-j*j,0.5);
+                if(i*i+j*j+k*k==n)
+                    return 3;
+            }
+        }
+        return 4;
+    }
+};
+class Solution1 {
+public:
     int res=9999;
     int numSquares(int n) {
         //基本思想：递归，通过递归找出所有的可能，最优解赋值给res
@@ -31,7 +56,7 @@ public:
         return;
     }
 };
-class Solution1 {
+class Solution2 {
 public:
     int numSquares(int n) {
         //基本思想：数学，四平方和定理
@@ -55,7 +80,7 @@ public:
         return 3;
     }
 };
-class Solution2 {
+class Solution3 {
 public:
     int numSquares(int n) {
         //基本思想：动态规划，dp[n]表示数字n需要最少的完全平方数组成，则dp[n]=1+min(dp[n-1*1],dp[n-2*2],dp[n-3*3]...dp[n-k*k])
