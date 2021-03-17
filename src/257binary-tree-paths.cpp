@@ -55,6 +55,41 @@ public:
 		return;
 	}
 };
+class Solution1 {
+public:
+    vector<string> binaryTreePaths(TreeNode* root) {
+		//·ÇµÝ¹é
+        stack<TreeNode*> st;
+        stack<string> path;
+        vector<string> res;
+        string cur;
+        if(root)
+        {
+            st.push(root);
+            path.push(to_string(root->val));
+        }    
+        while(!st.empty())
+        {
+            root=st.top();
+            st.pop();
+            cur=path.top();
+            path.pop();
+            if(root->left==nullptr&&root->right==nullptr)
+                res.push_back(cur);
+            if(root->left)
+            {
+                st.push(root->left);
+                path.push(cur+"->"+to_string(root->left->val));
+            }
+            if(root->right)
+            {
+                st.push(root->right);
+                path.push(cur+"->"+to_string(root->right->val));
+            }
+        }
+        return res;
+    }
+};
 int main()
 {
 	Solution solute;
