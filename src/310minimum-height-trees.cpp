@@ -8,52 +8,53 @@
 using namespace std;
 class Solution {
 public:
-    map<int,vector<int>> Map;  //记录树节点的有向连接情况
-    int depth;  //记录以当前节点为根节点的树的最大高度
     vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
-        //基本思想：最正常的思维然而超时，遍历0~n-1每个节点，以该节点为根节点，不断递归计算以此节点为根节点的树的最大高度depth，
-        //如果depth小于mindepth，说明以此节点为根节点的树的高度是目前树高度中最小的，更新mindepth，保存此节点到res
+        //简化版：拓扑排序，使用multimap存储图结构，相比于map<int,set<int>>存储图结构更简单
+        //将度为1的节点不断从无向图中移除，直至剩余节点数小于等于2，那么剩余的节点作为根节点形成的树的高度最小
+        if(n==1)  return {0};
         vector<int> res;
-        int mindepth=1e9;
-        //将边转化为节点有向连接情况保存至Map
-        for(int i=0;i<edges.size();i++)
+        multimap<int,int> Map;
+        deque<int> queue;
+        for(auto v:edges)
         {
-            Map[edges[i][0]].push_back(edges[i][1]);
-            Map[edges[i][1]].push_back(edges[i][0]);
+            Map.insert({v[0],v[1]});
+            Map.insert({v[1],v[0]});
         }
-        //遍历0~n-1每个节点，以该节点为根节点，不断递归计算以此节点为根节点的树的最大高度depth
         for(int i=0;i<n;i++)
         {
-            vector<int> path{i};
-            depth=0;
-            int h=1;
-            Recursion(i,path,h);
-            //如果depth小于mindepth，说明以此节点为根节点的树的高度是目前树高度中最小的，更新mindepth，保存此节点到res
-            if(depth<mindepth)
+            if(Map.count(i)==1)
+                queue.push_front(i);   
+        }
+        while(Map.size()>2)
+        {
+            int len=queue.size();
+            while(len--)
             {
-                res.clear();
-                res.push_back(i);
-                mindepth=depth;
+                int num1=queue.back();
+                int num2=Map.find(num1)->second;
+                queue.pop_back();
+                int cnt=Map.count(num2);
+                auto iter=Map.find(num2);
+                while(cnt--)
+                {
+                    if(iter->second==num1)
+                    {
+                        Map.erase(iter);
+                        break;
+                    }
+                    iter++;
+                }
+                if(Map.count(num2)==1)
+                    queue.push_front(num2);
+                Map.erase(num1);
             }
-            else if(depth==mindepth)
-                res.push_back(i);
+        }
+        while(!queue.empty())
+        {
+            res.push_back(queue.back());
+            queue.pop_back();
         }
         return res;
-    }
-    void Recursion(int n,vector<int> path,int h)
-    {
-        if(h>depth)
-            depth=h;
-        vector<int> nextnode=Map[n];
-        for(int i=0;i<nextnode.size();i++)
-        {
-            vector<int>::iterator iter=find(path.begin(),path.end(),nextnode[i]);
-            if(iter==path.end())
-            {
-                path.push_back(nextnode[i]);
-                Recursion(nextnode[i],path,h+1);
-            }
-        }
     }
 };
 class Solution1 {
@@ -105,6 +106,56 @@ public:
         for(auto iter=Map.begin();iter!=Map.end();iter++)
             res.push_back(iter->first);
         return res;
+    }
+};
+class Solution2 {
+public:
+    map<int,vector<int>> Map;  //记录树节点的有向连接情况
+    int depth;  //记录以当前节点为根节点的树的最大高度
+    vector<int> findMinHeightTrees(int n, vector<vector<int>>& edges) {
+        //基本思想：最正常的思维然而超时，遍历0~n-1每个节点，以该节点为根节点，不断递归计算以此节点为根节点的树的最大高度depth，
+        //如果depth小于mindepth，说明以此节点为根节点的树的高度是目前树高度中最小的，更新mindepth，保存此节点到res
+        vector<int> res;
+        int mindepth=1e9;
+        //将边转化为节点有向连接情况保存至Map
+        for(int i=0;i<edges.size();i++)
+        {
+            Map[edges[i][0]].push_back(edges[i][1]);
+            Map[edges[i][1]].push_back(edges[i][0]);
+        }
+        //遍历0~n-1每个节点，以该节点为根节点，不断递归计算以此节点为根节点的树的最大高度depth
+        for(int i=0;i<n;i++)
+        {
+            vector<int> path{i};
+            depth=0;
+            int h=1;
+            Recursion(i,path,h);
+            //如果depth小于mindepth，说明以此节点为根节点的树的高度是目前树高度中最小的，更新mindepth，保存此节点到res
+            if(depth<mindepth)
+            {
+                res.clear();
+                res.push_back(i);
+                mindepth=depth;
+            }
+            else if(depth==mindepth)
+                res.push_back(i);
+        }
+        return res;
+    }
+    void Recursion(int n,vector<int> path,int h)
+    {
+        if(h>depth)
+            depth=h;
+        vector<int> nextnode=Map[n];
+        for(int i=0;i<nextnode.size();i++)
+        {
+            vector<int>::iterator iter=find(path.begin(),path.end(),nextnode[i]);
+            if(iter==path.end())
+            {
+                path.push_back(nextnode[i]);
+                Recursion(nextnode[i],path,h+1);
+            }
+        }
     }
 };
 int main()
