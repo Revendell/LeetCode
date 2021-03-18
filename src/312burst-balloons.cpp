@@ -7,6 +7,24 @@ using namespace std;
 class Solution {
 public:
     int maxCoins(vector<int>& nums) {
+        //简化版：动态规划，正向动态规划，dp[i][j]表示[i,j]范围的最大分数，注意第一重循环必须是j，不断扩大j的范围，并且i必须从j-2不断往前到0，先计算出nums[i]*nums[k]*nums[j]
+        nums.insert(nums.begin(),1);
+        nums.push_back(1);
+        vector<vector<int>> dp(nums.size(),vector<int>(nums.size(),0));
+        for(int j=2;j<nums.size();j++)
+        {
+            for(int i=j-2;i>=0;i--)
+            {
+                for(int k=i+1;k<j;k++)
+                    dp[i][j]=max(dp[i][j],dp[i][k]+dp[k][j]+nums[i]*nums[k]*nums[j]);
+            }
+        }
+        return dp[0][nums.size()-1];
+    }
+};
+class Solution1 {
+public:
+    int maxCoins(vector<int>& nums) {
         //基本思想：动态规划，这是一道区间动态规划，用的是分治的思想，大区间用小区间更新，很容易想到dfs+记忆化，这里用自底向上dp推出来的。石子合并和Floyd算法都是一类题。
         nums.push_back(1);
         nums.insert(nums.begin(),1);
