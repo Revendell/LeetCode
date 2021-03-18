@@ -12,7 +12,7 @@ public:
 		int left=0,right=nums.size()-1;
 		while(left<right)
         {
-            int mid=quickSelect(nums,left,right);
+            int mid=Partition(nums,left,right);
             if(mid==target)
                 return nums[mid];
             if(mid<target)
@@ -22,20 +22,19 @@ public:
         }
 		return nums[left];
 	}
-	int quickSelect(vector<int>& nums,int left,int right)
+	int Partition(vector<int>& nums,int left,int right)
 	{
-	    int i=left+1,j=right;
-	    while(true)
+        int pivot=nums[left];
+	    while(left<right)
         {
-            while(i<right&&nums[i]<=nums[left])
-                i++;
-            while(left<j&&nums[j]>=nums[left])
-                j--;
-            if(i>=j)  break;
-            swap(nums[i],nums[j]);
+            while(left<right&&pivot<=nums[right])
+                right--;
+            swap(nums[left],nums[right]);
+            while(left<right&&nums[left]<=pivot)
+                left++;
+            swap(nums[left],nums[right]);
         }
-        swap(nums[left],nums[j]);
-        return j;
+        return left;
 	}
 };
 class Solution1 {
