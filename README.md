@@ -299,6 +299,7 @@
 - [394、字符串解码（栈）](https://blog.csdn.net/Revendell/article/details/112177982)<br>
 - [395、至少有K个重复字符的最长子串（分治法）](https://blog.csdn.net/Revendell/article/details/114165492)<br>
 - [399、除法求值（递归dfs深度优先搜索，抽象成有向加权图——困难）](https://blog.csdn.net/Revendell/article/details/112239723)<br>
+- [402、移掉K位数字（单调栈）](https://blog.csdn.net/Revendell/article/details/115008922)<br>
 - [406、根据身高重建队列（插入排序）](https://blog.csdn.net/Revendell/article/details/112260121)<br>
 - [412、Fizz Buzz（数字和字符串相互转化）](https://blog.csdn.net/Revendell/article/details/114168200)<br>
 - [415、字符串相加（双指针）](https://blog.csdn.net/Revendell/article/details/114982242)<br>
