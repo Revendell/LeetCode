@@ -5,7 +5,35 @@
 #include<set>
 #include<stack>
 using namespace std;
+bool Compare(vector<int> &a,vector<int> &b)
+{
+    if(a[0]==b[0])
+        return a[1]<b[1];
+    return a[0]>b[0];
+}
 class Solution {
+public:
+    vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
+        //简化版：插入排序，先将people从大到小逆序，然后对每个people往前插入至满足条件即可
+        vector<vector<int>> res(people);
+        sort(res.begin(),res.end(),Compare);
+        int i,j;
+        for(i=1;i<res.size();i++)
+        {
+            vector<int> tmp=res[i];
+            for(j=i-1;j>=0;j--)
+            {
+                if(tmp[1]<j+1)
+                    res[j+1]=res[j];
+                else
+                    break;
+            }
+            res[j+1]=tmp;
+        }
+        return res;
+    }
+};
+class Solution1 {
 public:
     vector<vector<int>> reconstructQueue(vector<vector<int>>& people) {
         vector<vector<int>> res(people);
