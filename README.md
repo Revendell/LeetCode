@@ -257,6 +257,7 @@
 - [321、拼接最大数（单调栈+归并——困难）](https://blog.csdn.net/Revendell/article/details/111601630)<br>
 - [322、零钱兑换（动态规划——完全背包）](https://blog.csdn.net/Revendell/article/details/111634752)<br>
 - [324、摆动排序 II（nth_element+荷兰旗问题——困难）](https://blog.csdn.net/Revendell/article/details/111710573)<br>
+- [325、和等于 k 的最长子数组长度（前缀和+哈希表）](https://blog.csdn.net/Revendell/article/details/115370166)<br>
 - [326、3的幂（数学）](https://blog.csdn.net/Revendell/article/details/111740001)<br>
 - [327、区间和的个数（前缀和+归并排序——困难）](https://blog.csdn.net/Revendell/article/details/113696265)<br>
 - [328、奇偶链表（单链表基本操作）](https://blog.csdn.net/Revendell/article/details/111841259)<br>
