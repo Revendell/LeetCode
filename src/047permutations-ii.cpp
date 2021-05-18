@@ -2,6 +2,67 @@
 #include<vector>
 #include<algorithm>
 using namespace std;
+class Solution1 {
+public:
+	int permuteUnique(vector<int>& nums) {
+		int res=1;
+		for(int i=1;i<=nums.size();i++)
+			res*=i;
+		sort(nums.begin(),nums.end());
+		int cnt=1,sum=1;
+		for(int i=1;i<nums.size();i++)
+		{
+			if(nums[i]==nums[i-1])
+			{
+				cnt++;
+				sum*=cnt;
+			}
+			else
+			{
+				res/=sum;
+				sum=1;
+				cnt=1;
+			}
+		}
+		res/=sum;
+		return res;
+	}
+	void Recursion(vector<int> nums, vector<int> cur, int cnt)
+	{
+		//cnt计数cur中元素个数，当等于nums.size()，将当前的一种下标组合cur对应元素保存到res
+		if (cnt == nums.size())
+		{
+			vector<int> temp;
+			for (auto& r : cur)
+				temp.push_back(nums[r]);
+			res.push_back(temp);
+			return;
+		}
+		//循环遍历nums所有元素
+		for (int i = 0; i < nums.size(); i++)
+		{
+			int flag = 0;
+			//看当前nums中的下标i是否存在cur中，若存在cur中或者看当前组合下标cur中对应元素与nums[i]相同当前元素下标i必须大于相同元素下标r，则flag=1否则继续循环看nums下一个元素
+			for (auto& r : cur)
+			{
+				if (r == i || (nums[r] == nums[i] && i < r))
+				{
+					flag = 1;
+					break;
+				}
+			}
+			//若flag=0，当前下标i加入下标组合cur并且cnt+1，递归找下一个元素
+			if (flag == 0)
+			{
+				cur.push_back(i);
+				Recursion(nums, cur, cnt + 1);
+				//回溯弹出刚刚加入的下标i
+				cur.pop_back();
+			}
+		}
+		return;
+	}
+};
 class Solution {
 public:
 	vector<vector<int>> res;
