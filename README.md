@@ -312,6 +312,7 @@
 - [454、四数相加 II（哈希表，空间换时间）](https://blog.csdn.net/Revendell/article/details/114175110)<br>
 - [460、LFU 缓存（set+哈希表）](https://blog.csdn.net/Revendell/article/details/115560525)<br>
 - [461、汉明距离（位运算）](https://blog.csdn.net/Revendell/article/details/112372769)<br>
+- [462、子串匹配（动态规划）](https://blog.csdn.net/Revendell/article/details/116999779)<br>
 - [494、目标和（动态规划，01背包）](https://blog.csdn.net/Revendell/article/details/113136809)<br>
 - [509、斐波那契数（递归、迭代）](https://blog.csdn.net/Revendell/article/details/114983018)<br>
 - [538、把二叉搜索树转换为累加树（递归）](https://blog.csdn.net/Revendell/article/details/112368465)<br>
