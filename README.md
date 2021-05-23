@@ -324,6 +324,7 @@
 - [617、合并二叉树（递归——经典）](https://blog.csdn.net/Revendell/article/details/112305416)<br>
 - [621、任务调度器（贪心算法）](https://blog.csdn.net/Revendell/article/details/113196195)<br>
 - [647、回文子串（中心扩展法）](https://blog.csdn.net/Revendell/article/details/112317808)<br>
+- [684、冗余连接（并查集）](https://blog.csdn.net/Revendell/article/details/117199386)<br>
 - [739、每日温度（单调栈，递减栈）](https://blog.csdn.net/Revendell/article/details/112363112)<br>
 - [763、划分字母区间（排序+双指针）](https://blog.csdn.net/Revendell/article/details/114085406)<br>
 - [912、排序数组（快速排序、归并排序）](https://blog.csdn.net/Revendell/article/details/114978231)<br>
