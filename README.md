@@ -286,7 +286,7 @@
 - [368、最大整除子集（动态规划）](https://blog.csdn.net/Revendell/article/details/113834860)<br>
 - [371、两整数之和（位运算——困难）](https://blog.csdn.net/Revendell/article/details/113358231)<br>
 - [372、超级次方（快速幂）](https://blog.csdn.net/Revendell/article/details/113812763)<br>
-- [373、查找和最小的K对数字（大顶堆、小顶堆、大小堆）](https://blog.csdn.net/Revendell/article/details/113830476)<br>
+- [373、查找和最小的K对数字（大顶堆、归并+小顶堆、大小堆）](https://blog.csdn.net/Revendell/article/details/113830476)<br>
 - [374、猜数字大小（二分查找）](https://blog.csdn.net/Revendell/article/details/113358901)<br>
 - [375、猜数字大小 II（动态规划，区间动态规划，矩阵链乘法——总结）](https://blog.csdn.net/Revendell/article/details/113837935)<br>
 - [376、摆动序列（动态规划）](https://blog.csdn.net/Revendell/article/details/114190262)<br>
