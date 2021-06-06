@@ -8,6 +8,38 @@ struct ListNode {
 };
 class Solution {
 public:
+    struct Node{
+        ListNode* ptr;
+        Node(){}
+        Node(ListNode* ptr):ptr(ptr){}
+        bool operator>(const Node& a)const{return this->ptr->val>a.ptr->val;}
+    };
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        ListNode* head=new ListNode();
+        ListNode* p=head;
+        priority_queue<Node,vector<Node>,greater<Node>> min_heap;
+        for(int i=0;i<lists.size();i++)
+        {
+            if(lists[i])
+                min_heap.push(Node(lists[i]));
+        }
+        while(!min_heap.empty())
+        {
+            Node cur=min_heap.top();
+            min_heap.pop();
+            p->next=cur.ptr;
+            p=p->next;
+            if(cur.ptr->next)
+            {
+                cur.ptr=cur.ptr->next;
+                min_heap.push(cur);
+            }
+        }
+        return head->next;
+    }
+};
+class Solution {
+public:
     ListNode* mergeKLists(vector<ListNode*>& lists) {
 		//基本思想：归并+堆，维护一个堆，堆中为每个list的当前最小的节点，堆大小lists.size，
 		//不断从堆中取出最小的节点，取出最小的节点后，加入该节点所在list的下一个节点入堆
