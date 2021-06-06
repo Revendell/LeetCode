@@ -23,7 +23,7 @@
 - [20、有效的括号（栈）](https://blog.csdn.net/Revendell/article/details/103446886)<br>
 - [21、合并两个有序链表（有序链表合并）](https://blog.csdn.net/Revendell/article/details/103460468)<br>
 - [22、括号生成（递归回溯法）](https://blog.csdn.net/Revendell/article/details/103468918)<br>
-- [23、合并K个排序链表（逐一比较、分治法）](https://blog.csdn.net/Revendell/article/details/103482864)<br>
+- [23、合并K个排序链表（归并+堆、逐一比较、分治法）](https://blog.csdn.net/Revendell/article/details/103482864)<br>
 - [24、两两交换链表中的节点（链表操作）](https://blog.csdn.net/Revendell/article/details/103500685)<br>
 - [25、K个一组翻转链表（栈）](https://blog.csdn.net/Revendell/article/details/103509921)<br>
 - [26、删除排序数组中的重复项（双指针、删除元素法）](https://blog.csdn.net/Revendell/article/details/103527479)<br>
