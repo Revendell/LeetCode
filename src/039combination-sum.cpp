@@ -3,6 +3,19 @@
 using namespace std;
 class Solution {
 public:
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
+        vector<int> dp(target+1,0);
+        dp[0]=1;
+        for(auto num:candidates)
+        {
+            for(int j=num;j<=target;j++)
+                dp[j]+=dp[j-num];
+        }
+        return dp[target];
+    }
+};
+class Solution {
+public:
 	vector<vector<int>> res;
 	vector<vector<int>> combinationSum(vector<int>& candidates, int target) {
 		vector<int> cur;
