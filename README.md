@@ -39,7 +39,7 @@
 - [36、有效的数独（暴力法、哈希表）](https://blog.csdn.net/Revendell/article/details/105074042)<br>
 - [37、解数独（递归回溯法+哈希表）](https://blog.csdn.net/Revendell/article/details/105102064)<br>
 - [38、外观数列（循环遍历）](https://blog.csdn.net/Revendell/article/details/105118505)<br>
-- [39、组合总和（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105125318)<br>
+- [39、组合总和（递归回溯法、完全背包）](https://blog.csdn.net/Revendell/article/details/105125318)<br>
 - [40、组合总和II（递归回溯法）](https://blog.csdn.net/Revendell/article/details/105153930)<br>
 - [41、缺失的第一个正数（索引作为哈希表）](https://blog.csdn.net/Revendell/article/details/105165285)<br>
 - [42、接雨水（暴力法、按列求）](https://blog.csdn.net/Revendell/article/details/105172091)<br>
