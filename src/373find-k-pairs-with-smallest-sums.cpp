@@ -41,6 +41,38 @@ public:
         return res;
     }
 };
+class Solution {
+public:
+    struct Node{
+        int i,j;
+        int u,v;
+        Node(){}
+        Node(int i,int j,int u,int v):i(i),j(j),u(u),v(v){}
+        bool operator>(const Node& a)const {return this->u+this->v>a.u+a.v;}
+    };
+    vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
+        vector<vector<int>> res;
+        if(nums1.size()==0||nums2.size()==0)  return res;
+        k=nums1.size()*nums2.size()<k?nums1.size()*nums2.size():k;
+        Node tmp;
+        priority_queue<Node,vector<Node>,greater<Node>> min_heap;
+        for(int i=0;i<nums1.size();i++)
+            min_heap.push(Node(i,0,nums1[i],nums2[0]));
+        while(k--)
+        {
+            tmp=min_heap.top();
+            min_heap.pop();
+            res.push_back(vector<int>{tmp.u,tmp.v});
+            if(tmp.j+1!=nums2.size())
+            {
+                tmp.j++;
+                tmp.v=nums2[tmp.j];
+                min_heap.push(tmp);
+            }
+        }
+        return res;
+    }
+};
 class Solution1 {
 public:
     vector<vector<int>> kSmallestPairs(vector<int>& nums1, vector<int>& nums2, int k) {
