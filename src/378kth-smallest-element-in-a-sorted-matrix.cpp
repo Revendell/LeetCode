@@ -6,6 +6,33 @@ using namespace std;
 class Solution {
 public:
     int kthSmallest(vector<vector<int>>& matrix, int k) {
+        //简化版：pair<int,int>分别是matrix中的横纵坐标，但是因为是自己实现的堆所以性能上不如直接使用priority_queue
+        vector<pair<int,int>> min_heap;
+        int res;
+        for(int i=0;i<matrix.size();i++)
+        {
+            min_heap.push_back({i,0});
+            push_heap(min_heap.begin(),min_heap.end(),[matrix](pair<int,int> &a,pair<int,int> &b){return matrix[a.first][a.second]>matrix[b.first][b.second];});
+        }
+        while(k--)
+        {
+            pair<int,int> tmp=min_heap[0];
+            res=matrix[tmp.first][tmp.second];
+            pop_heap(min_heap.begin(),min_heap.end(),[matrix](pair<int,int> &a,pair<int,int> &b){return matrix[a.first][a.second]>matrix[b.first][b.second];});
+            min_heap.pop_back();
+            tmp.second++;
+            if(tmp.second<matrix.size())
+            {
+                min_heap.push_back(tmp);
+                push_heap(min_heap.begin(),min_heap.end(),[matrix](pair<int,int> &a,pair<int,int> &b){return matrix[a.first][a.second]>matrix[b.first][b.second];});
+            }
+        }
+        return res;
+    }
+};
+class Solution {
+public:
+    int kthSmallest(vector<vector<int>>& matrix, int k) {
         //基本思想：归并+小顶堆，和373查找和最小的K对数字思想一致
         //维护N维大小的指针表示N行数组的位置，每次都要从N个指针里取最小的pop，然后将加入的值的下一个值入堆
         int res;
