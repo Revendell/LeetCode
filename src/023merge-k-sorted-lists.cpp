@@ -6,6 +6,40 @@ struct ListNode {
 	ListNode* next;
 	ListNode(int x) : val(x), next(NULL) {}
 };
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+		//基本思想：归并+堆，维护一个堆，堆中为每个list的当前最小的节点，堆大小lists.size，
+		//不断从堆中取出最小的节点，取出最小的节点后，加入该节点所在list的下一个节点入堆
+        ListNode* head=new ListNode();
+        ListNode* p=head;
+        vector<ListNode*> min_heap;
+        for(int i=0;i<lists.size();i++)
+        {
+            if(lists[i])
+            {
+                min_heap.push_back(lists[i]);
+                push_heap(min_heap.begin(),min_heap.end(),[](ListNode* &a,ListNode* &b){return a->val>b->val;});
+            } 
+        }
+        while(!min_heap.empty())
+        {
+            ListNode* cur=min_heap[0];
+            pop_heap(min_heap.begin(),min_heap.end(),[](ListNode* &a,ListNode* &b){return a->val>b->val;});
+            min_heap.pop_back();
+            p->next=cur;
+            p=p->next;
+            cur=cur->next;
+            if(cur)
+            {
+                min_heap.push_back(cur);
+                push_heap(min_heap.begin(),min_heap.end(),[](ListNode* &a,ListNode* &b){return a->val>b->val;});
+            }
+        }
+        return head->next;
+
+    }
+};
 //解法一：逐一比较
 //比较k个节点（每个链表的首节点），获得最小值的节点，将选中的节点接在最终有序链表res的后面。时间复杂度O(k*N)
 class Solution1 {
