@@ -4,6 +4,26 @@
 using namespace std;
 class Solution {
 public:
+    string multiply(string num1, string num2) {
+		//简化版
+        int l1 = num1.size();
+        int l2 = num2.size();
+        string res(l1 + l2, '0');
+        for(int i=l1-1; i>=0; i--) {
+            for(int j=l2-1; j>=0; j--) {
+                int tmp = (res[i+j+1] - '0') + (num1[i] - '0')*(num2[j] - '0'); 
+                res[i+j+1] = tmp%10 + '0';
+                res[i+j] += tmp/10;
+            }
+        }
+        for(int i = 0; i < l1+l2; i++){
+            if(res[i]!='0') return res.substr(i);
+        }
+        return "0";     
+    }
+};
+class Solution {
+public:
 	string multiply(string num1, string num2) {
 		//基本思想：暴力模拟竖式乘法计算过程，两重循环第一重循环读取num2中某个数与第二重循环读取num1所有数相乘这就是一层结果layer，然后将每一层结果加到res最后返回res的逆序
 		//layer为num2中某个数与num1所有数相乘结果也就是一层结果，将每一层结果加到res就是最后返回结果
