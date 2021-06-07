@@ -3,6 +3,20 @@
 using namespace std;
 class Solution {
 public:
+    void rotate(vector<vector<int>>& matrix) {
+		//先上下翻转然后对角翻转
+        int n = matrix.size();
+        for(int i = 0; i < n / 2; i++)
+            swap(matrix[i],matrix[n-1-i]);
+        for(int i = 0; i < n; i++) {
+            for(int j = i; j < n; j++) {
+                swap(matrix[i][j], matrix[j][i]);
+            }
+        }
+    }
+};
+class Solution {
+public:
 	void rotate(vector<vector<int>>& matrix) {
 		//基本思想：找规律，模拟旋转过程，从外往内一层一层循转总共层数为matrix.size()/2，每一层数字个数为(k-2)*4，循环k-2次，每次循转4个数字
 		int i, j, temp, k;
